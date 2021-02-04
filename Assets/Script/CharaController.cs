@@ -19,6 +19,10 @@ public class CharaController : MonoBehaviour
 
         // deplace le personnage
         transform.Translate(Vector3.right * m_speed * Time.deltaTime * inputValue);
+<<<<<<< Updated upstream
+=======
+        transform.Translate(Vector3.back * m_speed * Time.deltaTime * inputValue2);
+>>>>>>> Stashed changes
 
     }
 }
