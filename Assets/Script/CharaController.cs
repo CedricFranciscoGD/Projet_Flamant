@@ -16,9 +16,11 @@ public class CharaController : MonoBehaviour
     void Update()
     {
         float inputValue = Input.GetAxis("Vertical");
+        float inputValue2 = Input.GetAxis("Horizontal");
 
         // deplace le personnage
         transform.Translate(Vector3.right * m_speed * Time.deltaTime * inputValue);
+        transform.Translate(Vector3.forward * m_speed * Time.deltaTime * inputValue2);
 
     }
 }
