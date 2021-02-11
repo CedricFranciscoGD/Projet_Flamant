@@ -1,22 +1,19 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Serialization;
-using Random = System.Random;
 
-public class SpawnObstacle : MonoBehaviour
+public class SpawnCollectible : MonoBehaviour
 {
     [SerializeField] private float m_delay;
     [SerializeField] private float m_elapsedTime;
-    [SerializeField] GameObject m_obstacle;
+    [SerializeField] GameObject m_collect;
     CharaController m_caraCtrl;
     private Rigidbody m_rb;
 
-    [Tooltip("Spawn Obstacle distance")]
+    [Tooltip("Spawn collectible distance")]
     [SerializeField] private float m_dist = 10;
 
-    
+        
     void Start()
     {
         m_elapsedTime = 0;
@@ -32,15 +29,14 @@ public class SpawnObstacle : MonoBehaviour
 
         if (m_elapsedTime >= m_delay)
         {
-            GenerateObstacle();
+            GenerateCollectible();
             m_elapsedTime = 0;
         }
-        
+            
     }
 
-    void GenerateObstacle()
+    void GenerateCollectible()
     {
-        Instantiate(m_obstacle, m_rb.transform.position + m_rb.transform.right * m_dist, m_obstacle.transform.rotation);
+        Instantiate(m_collect, m_rb.transform.position + m_rb.transform.right * m_dist, m_collect.transform.rotation);
     }
-
 }

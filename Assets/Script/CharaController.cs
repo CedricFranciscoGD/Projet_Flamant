@@ -23,7 +23,7 @@ public class CharaController : MonoBehaviour
         // deplace le personnage
         transform.Translate(Vector3.back * m_speed * Time.deltaTime * inputValue);
         //Déplace le personnage automatiquement
-        //transform.Translate(Vector3.right * m_speed * Time.deltaTime);
+        transform.Translate(Vector3.right * m_speed * Time.deltaTime);
 
         // delimite la taille des déplacements
         if(transform.position.x > m_leftBand){

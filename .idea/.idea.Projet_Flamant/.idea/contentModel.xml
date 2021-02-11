@@ -13,6 +13,7 @@
           <e p="DestroyEnemy.cs" t="Include" />
           <e p="LateralMovement.cs" t="Include" />
           <e p="ShootEggs.cs" t="Include" />
+          <e p="SpawnCollectible.cs" t="Include" />
           <e p="SpawnObstacle.cs" t="Include" />
         </e>
       </e>

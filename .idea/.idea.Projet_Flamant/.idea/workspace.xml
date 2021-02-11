@@ -12,6 +12,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Script/LateralMovement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/SpawnCollectible.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/DestroyEnemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/AmmoMove.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -19,13 +20,14 @@
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Script/WorldBound.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/ColldeRetry.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/CollideRetry.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/AmmoMove.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/CharaController.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/LateralMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/ShootEggs.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/DestroyEnemy.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/SpawnObstacle.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/SpawnCollectible.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/CharaController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/CollideRetry.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1o1RcqWmP3nq2lNPnGl2bOOPvWX" />
@@ -69,7 +71,7 @@
       <option name="presentableId" value="Default" />
       <updated>1612452197357</updated>
       <workItem from="1612452211701" duration="4884000" />
-      <workItem from="1613051338306" duration="4008000" />
+      <workItem from="1613051338306" duration="7694000" />
     </task>
     <servers />
   </component>
