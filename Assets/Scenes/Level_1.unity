@@ -518,6 +518,7 @@ GameObject:
   m_Component:
   - component: {fileID: 981992587}
   - component: {fileID: 981992588}
+  - component: {fileID: 981992589}
   m_Layer: 0
   m_Name: SpawnManager
   m_TagString: Untagged
@@ -555,7 +556,24 @@ MonoBehaviour:
   m_elapsedTime: 0
   m_obstacle: {fileID: 8586340751870682499, guid: b360406ee08afde4499bed1e2120de4c,
     type: 3}
-  m_dist: 10
+  m_dist: 35
+--- !u!114 &981992589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981992586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d7407b9546c2f64a9912639a63a600e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_delay: 1
+  m_elapsedTime: 0
+  m_collect: {fileID: 1184123326491432794, guid: c63aba9c5b9a670408ede5e868eab3c3,
+    type: 3}
+  m_dist: 50
 --- !u!1001 &1140441660
 PrefabInstance:
   m_ObjectHideFlags: 0

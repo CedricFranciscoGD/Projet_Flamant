@@ -9,6 +9,21 @@ public class CollideRetry : MonoBehaviour
     [SerializeField] private float m_zPos;
     private void OnTriggerEnter(Collider other)
     {
-        transform.position = new Vector3(m_xPos, m_yPos, m_zPos);
+        if (other.CompareTag("Danger"))
+        {
+            transform.position = new Vector3(m_xPos, m_yPos, m_zPos);
+            Debug.Log(message:"Danger");
+        }
+        
+        else if (other.CompareTag("Enemy"))
+        {
+            transform.position = new Vector3(m_xPos, m_yPos, m_zPos);
+            Debug.Log(message:"Enemy");
+        }
+        
+        else if (other.CompareTag("Bonus"))
+        {
+            Debug.Log(message:"Bonus");
+        }
     }
 }
