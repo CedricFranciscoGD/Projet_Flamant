@@ -21,11 +21,16 @@
       <option value="$PROJECT_DIR$/Assets/Script/ColldeRetry.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/CollideRetry.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/AmmoMove.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/CharaController.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/LateralMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/ShootEggs.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/DestroyEnemy.cs" />
+<<<<<<< HEAD
       <option value="$PROJECT_DIR$/Assets/Script/SpawnObstacle.cs" />
+=======
+      <option value="$PROJECT_DIR$/Assets/Script/BossBehavior.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/CharaController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/BossShoot.cs" />
+>>>>>>> dev_boss1
     </changedPaths>
   </component>
   <component name="ProjectId" id="1o1RcqWmP3nq2lNPnGl2bOOPvWX" />
@@ -38,6 +43,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -69,7 +81,11 @@
       <option name="presentableId" value="Default" />
       <updated>1612452197357</updated>
       <workItem from="1612452211701" duration="4884000" />
+<<<<<<< HEAD
       <workItem from="1613051338306" duration="4008000" />
+=======
+      <workItem from="1613051131388" duration="5912000" />
+>>>>>>> dev_boss1
     </task>
     <servers />
   </component>
