@@ -141,8 +141,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ammo: {fileID: 4088424880303298318, guid: 8e63a0c8c4ca7304aa30100472980c10, type: 3}
   m_popOffset: {x: 0, y: 1, z: 0}
-  m_ammoRemain: 5
-  m_ammoCapacity: 5
+  m_ammoRemain: 0
+  m_ammoCapacity: 0
 --- !u!114 &103204726
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -702,6 +702,9 @@ MonoBehaviour:
   m_obstacle: {fileID: 8586340751870682499, guid: b360406ee08afde4499bed1e2120de4c,
     type: 3}
   m_dist: 35
+  m_maxSpawn: 10
+  m_minSpawn: 1
+  m_spawnHeight: 6
 --- !u!114 &981992589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -991,6 +994,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_movmentSpeed
       value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4663592300236547856, guid: fe73482f1e885ec4782eca07a1cb0e2c,
+        type: 3}
+      propertyPath: m_minMove
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4663592300236547856, guid: fe73482f1e885ec4782eca07a1cb0e2c,
+        type: 3}
+      propertyPath: m_maxMove
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 7123477826381617828, guid: fe73482f1e885ec4782eca07a1cb0e2c,
         type: 3}
