@@ -141,6 +141,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ammo: {fileID: 4088424880303298318, guid: 8e63a0c8c4ca7304aa30100472980c10, type: 3}
   m_popOffset: {x: 0, y: 1, z: 0}
+  m_ammoRemain: 5
+  m_ammoCapacity: 5
 --- !u!114 &103204726
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,6 +8,8 @@ public class CollideRetry : MonoBehaviour
     [SerializeField] private float m_xPos;
     [SerializeField] private float m_yPos;
     [SerializeField] private float m_zPos;
+    
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Danger"))
@@ -21,9 +24,5 @@ public class CollideRetry : MonoBehaviour
             Debug.Log(message:"Enemy");
         }
         
-        else if (other.CompareTag("Bonus"))
-        {
-            Debug.Log(message:"Bonus");
-        }
     }
 }
