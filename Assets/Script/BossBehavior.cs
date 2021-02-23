@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.VersionControl;
 using UnityEngine;
+using Random=UnityEngine.Random;
 
 public class BossBehavior : MonoBehaviour
 {
@@ -17,37 +18,51 @@ public class BossBehavior : MonoBehaviour
     //Behavior
     [SerializeField] private float m_loopMovement = 1.0f;
     [SerializeField] private float m_elapsedTime = 0f;
-    [SerializeField] private bool m_inFight;
+    [SerializeField] private bool m_inFight = true;
+    [SerializeField] private bool m_leftOrRight = true;
+    [SerializeField] private float m_movmentSpeed;
+    private float m_randomMove;
+    private bool m_moveIsDone = true;
     
     
-    // Update is called once per frame
+    //Update is called once per frame
     void Update()
     {
+        //behavior
         if (m_inFight)
         {
             transform.Translate(Vector3.back * m_forwardEnemy * Time.deltaTime);
+
+            if (m_moveIsDone == true)
+            {
+                m_randomMove = Random.Range(1f, 15f);
+                Debug.Log(m_randomMove);
+                m_moveIsDone = false;
+            }
+            else
+            {
+                if (m_moveIsDone == false)
+                {
+                    if (m_leftOrRight)
+                    {
+                        transform.Translate(Vector3.right * m_speedEnemy * Time.deltaTime);
+                        m_randomMove -= m_movmentSpeed;
+                    }
+                    else
+                    {
+                        transform.Translate(Vector3.left * m_speedEnemy * Time.deltaTime);
+                        m_randomMove -= m_movmentSpeed;
+                    }
+
+                    if (m_randomMove < 0)
+                    {
+                        m_moveIsDone = true;
+                        m_leftOrRight = !m_leftOrRight;
+                    }
+                }
+            }
         }
-        
-        m_elapsedTime = m_loopMovement += Time.deltaTime;
-        
-        if (m_loopMovement > 0 && m_loopMovement < 2)
-        {
-            transform.Translate(Vector3.right * m_speedEnemy * Time.deltaTime);
-            //print(m_loopMovement);
-        }
-        
-        else if (m_loopMovement >= 2 && m_loopMovement < 4)
-        {
-            transform.Translate(Vector3.left * m_speedEnemy * Time.deltaTime);
-            //print(m_loopMovement);
-        }
-        
-        else if (m_loopMovement >= 4)
-        {
-            m_loopMovement = 0;
-        }
-        
-        
+
         // delimite la taille des déplacements
         if(transform.position.x > m_leftBand)
         {

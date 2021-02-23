@@ -1006,6 +1006,11 @@ PrefabInstance:
       propertyPath: m_forwardEnemy
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4663592300236547856, guid: fe73482f1e885ec4782eca07a1cb0e2c,
+        type: 3}
+      propertyPath: m_movmentSpeed
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7123477826381617828, guid: fe73482f1e885ec4782eca07a1cb0e2c,
         type: 3}
       propertyPath: m_Name
