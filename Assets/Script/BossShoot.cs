@@ -20,7 +20,6 @@ public class BossShoot : MonoBehaviour
         if (m_time >= m_trigger)
         {
             m_time = 0;
-            print("Boss shot");
             BossShot();
         }
     }
@@ -28,7 +27,6 @@ public class BossShoot : MonoBehaviour
     void BossShot()
     {
         Instantiate(m_bossAmmo, transform.position + m_popOffset, m_bossAmmo.transform.rotation);
-        print("SHOT");
     }
 }
 

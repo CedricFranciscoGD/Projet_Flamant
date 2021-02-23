@@ -10,6 +10,7 @@
           <e p="AmmoMove.cs" t="Include" />
           <e p="BossBehavior.cs" t="Include" />
           <e p="BossShoot.cs" t="Include" />
+          <e p="CameraFixedOnX.cs" t="Include" />
           <e p="CharaController.cs" t="Include" />
           <e p="CollideRetry.cs" t="Include" />
           <e p="DestroyEnemy.cs" t="Include" />
