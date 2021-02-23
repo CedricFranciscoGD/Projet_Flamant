@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.VersionControl;
 using UnityEngine;
+using Random=UnityEngine.Random;
 
 public class LateralMovement : MonoBehaviour
 {
@@ -15,10 +16,15 @@ public class LateralMovement : MonoBehaviour
 
     [SerializeField]
     private float m_rightBand;
-
-    [SerializeField] private float m_loopMovement = 1.0f;
+    private float m_loopMovement;
     [SerializeField] private float m_elapsedTime = 0f;
     // Update is called once per frame
+
+    private void Start()
+    {
+        m_loopMovement = Random.Range(1f, 2f);
+    }
+
     void Update()
     {
 
