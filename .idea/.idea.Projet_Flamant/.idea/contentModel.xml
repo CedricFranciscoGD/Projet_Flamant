@@ -14,6 +14,7 @@
           <e p="CharaController.cs" t="Include" />
           <e p="CollideRetry.cs" t="Include" />
           <e p="DestroyEnemy.cs" t="Include" />
+          <e p="GameManager.cs" t="Include" />
           <e p="LateralMovement.cs" t="Include" />
           <e p="ShootEggs.cs" t="Include" />
           <e p="SpawnCollectible.cs" t="Include" />

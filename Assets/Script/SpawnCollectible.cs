@@ -4,39 +4,38 @@ using UnityEngine;
 
 public class SpawnCollectible : MonoBehaviour
 {
-    [SerializeField] private float m_delay;
-    [SerializeField] private float m_elapsedTime;
     [SerializeField] GameObject m_collect;
-    CharaController m_caraCtrl;
-    private Rigidbody m_rb;
-
-    [Tooltip("Spawn collectible distance")]
-    [SerializeField] private float m_dist = 10;
-
-        
-    void Start()
-    {
-        m_elapsedTime = 0;
-        GameObject player = GameObject.Find("Player");
-        m_caraCtrl = player.GetComponent<CharaController>();
-        m_rb = player.GetComponent<Rigidbody>();
-    }
-
+    
+    [SerializeField] private float m_maxSpawnX = 10;
+    [SerializeField] private float m_minSpawnX = 1;
+    [SerializeField] private float m_spawnHeight = 10;
+    
+    private float m_spawnPosZ = 100;
+    
+    [SerializeField] private float m_spawnSpeedMax = 30;
+    [SerializeField] private float m_spawnSpeedMin = 5;
+    
+    [SerializeField] private int m_maxInstances = 50;
+    private int m_countInstances = 0;
+    
     // Update is called once per frame
     void Update()
     {
-        m_elapsedTime+= Time.deltaTime;
-
-        if (m_elapsedTime >= m_delay)
+        while (m_countInstances < m_maxInstances)
         {
             GenerateCollectible();
-            m_elapsedTime = 0;
+            m_countInstances++;
         }
-            
     }
 
     void GenerateCollectible()
     {
-        Instantiate(m_collect, m_rb.transform.position + m_rb.transform.right * m_dist, m_collect.transform.rotation);
+        Instantiate(m_collect, new Vector3(Random.Range(m_minSpawnX, m_maxSpawnX), m_spawnHeight, m_spawnPosZ),m_collect.transform.rotation);
+        IncrementSpawnZ();
+    }
+
+    void IncrementSpawnZ()
+    {
+        m_spawnPosZ -= Random.Range(m_spawnSpeedMin, m_spawnSpeedMax);
     }
 }

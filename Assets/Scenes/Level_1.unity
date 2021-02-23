@@ -674,11 +674,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d7407b9546c2f64a9912639a63a600e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_delay: 1
-  m_elapsedTime: 0
   m_collect: {fileID: 1184123326491432794, guid: c63aba9c5b9a670408ede5e868eab3c3,
     type: 3}
-  m_dist: 50
+  m_maxSpawnX: 10
+  m_minSpawnX: 1
+  m_spawnHeight: 5
+  m_spawnSpeedMax: 30
+  m_spawnSpeedMin: 5
+  m_maxInstances: 50
 --- !u!1 &1698710805
 GameObject:
   m_ObjectHideFlags: 0
