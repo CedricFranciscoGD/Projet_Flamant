@@ -22,6 +22,8 @@ public class BossBehavior : MonoBehaviour
     [SerializeField] private bool m_leftOrRight = true;
     [SerializeField] private float m_movmentSpeed;
     private float m_randomMove;
+    [SerializeField] private float m_minMove;
+    [SerializeField] private float m_maxMove;
     private bool m_moveIsDone = true;
     
     
@@ -35,8 +37,8 @@ public class BossBehavior : MonoBehaviour
 
             if (m_moveIsDone == true)
             {
-                m_randomMove = Random.Range(1f, 15f);
-                Debug.Log(m_randomMove);
+                m_randomMove = Random.Range(m_minMove, m_maxMove);
+                //Debug.Log(m_randomMove);
                 m_moveIsDone = false;
             }
             else
