@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     // Le jeu n'est pas arrêté
-    private bool m_gameIsOver = false;
+    private bool m_gameIsOver = true;
 
     /// <summary>
     /// Rentre dans cette fonction si le joueur entre en collision avec un élément enemy

@@ -18,6 +18,7 @@
           <e p="EnemynotmovingSpawn.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="LateralMovement.cs" t="Include" />
+          <e p="MenuControl.cs" t="Include" />
           <e p="ShootEggs.cs" t="Include" />
           <e p="SpawnCollectible.cs" t="Include" />
           <e p="SpawnEnemy.cs" t="Include" />

@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CollideRetry : MonoBehaviour
 {
@@ -19,13 +20,13 @@ public class CollideRetry : MonoBehaviour
         if (other.CompareTag("Danger"))
         {
             Debug.Log(message:"Danger");
-            FindObjectOfType<GameManager>().EndGame();
+            SceneManager.LoadScene("Level_1");
         }
         
         else if (other.CompareTag("Enemy"))
         {
             Debug.Log(message:"Enemy");
-            FindObjectOfType<GameManager>().EndGame();
+            SceneManager.LoadScene("Level_1");
         }
         
     }
