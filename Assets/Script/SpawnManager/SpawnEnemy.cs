@@ -10,7 +10,7 @@ public class SpawnEnemy : MonoBehaviour
     [SerializeField] private float m_minSpawnX = 1;
     [SerializeField] private float m_spawnHeight = 10;
     
-    private float m_spawnPosZ = 100;
+    [SerializeField] private float m_spawnPosZ;
     
     [SerializeField] private float m_spawnSpeedMax = 30;
     [SerializeField] private float m_spawnSpeedMin = 5;

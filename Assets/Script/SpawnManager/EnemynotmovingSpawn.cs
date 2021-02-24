@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpawnCollectible : MonoBehaviour
+public class EnemynotmovingSpawn : MonoBehaviour
 {
-    [SerializeField] GameObject m_collect;
+    [SerializeField] GameObject m_enemy;
     
     [SerializeField] private float m_maxSpawnX = 10;
     [SerializeField] private float m_minSpawnX = 1;
     [SerializeField] private float m_spawnHeight = 10;
     
-    private float m_spawnPosZ = 100;
+    [SerializeField] private float m_spawnPosZ;
     
     [SerializeField] private float m_spawnSpeedMax = 30;
     [SerializeField] private float m_spawnSpeedMin = 5;
@@ -30,7 +30,7 @@ public class SpawnCollectible : MonoBehaviour
 
     void GenerateCollectible()
     {
-        Instantiate(m_collect, new Vector3(Random.Range(m_minSpawnX, m_maxSpawnX), m_spawnHeight, m_spawnPosZ),m_collect.transform.rotation);
+        Instantiate(m_enemy, new Vector3(Random.Range(m_minSpawnX, m_maxSpawnX), m_spawnHeight, m_spawnPosZ),m_enemy.transform.rotation);
         IncrementSpawnZ();
     }
 

@@ -1,16 +1,20 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
+using Random=UnityEngine.Random;
 
-public class EnemynotmovingSpawn : MonoBehaviour
+public class SpawnObstacle : MonoBehaviour
 {
-    [SerializeField] GameObject m_enemy;
     
+    [SerializeField] GameObject m_obstacle;
+
     [SerializeField] private float m_maxSpawnX = 10;
     [SerializeField] private float m_minSpawnX = 1;
     [SerializeField] private float m_spawnHeight = 10;
     
-    private float m_spawnPosZ = 100;
+    [SerializeField] private float m_spawnPosZ;
     
     [SerializeField] private float m_spawnSpeedMax = 30;
     [SerializeField] private float m_spawnSpeedMin = 5;
@@ -23,14 +27,14 @@ public class EnemynotmovingSpawn : MonoBehaviour
     {
         while (m_countInstances < m_maxInstances)
         {
-            GenerateCollectible();
+            GenerateObstacle();
             m_countInstances++;
         }
     }
 
-    void GenerateCollectible()
+    void GenerateObstacle()
     {
-        Instantiate(m_enemy, new Vector3(Random.Range(m_minSpawnX, m_maxSpawnX), m_spawnHeight, m_spawnPosZ),m_enemy.transform.rotation);
+        Instantiate(m_obstacle, new Vector3(Random.Range(m_minSpawnX, m_maxSpawnX), m_spawnHeight, m_spawnPosZ),m_obstacle.transform.rotation);
         IncrementSpawnZ();
     }
 

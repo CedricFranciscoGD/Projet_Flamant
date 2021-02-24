@@ -40,7 +40,7 @@ public class ShootEggs : MonoBehaviour
 
         else
         {
-            Debug.Log(message:"NO AMMO !!!");
+            //Debug.Log(message:"NO AMMO !!!");
         }
         
     }
@@ -58,14 +58,14 @@ public class ShootEggs : MonoBehaviour
             if (other.CompareTag("Bonus"))
             {
                 Destroy(other.gameObject);
-                Debug.Log(message:"Bonus");
+                //Debug.Log(message:"Bonus");
                 m_ammoRemain += 1;
             }
         }
 
         else
         {
-            Debug.Log(message:"Full !");
+            //Debug.Log(message:"Full !");
         }
         
     }

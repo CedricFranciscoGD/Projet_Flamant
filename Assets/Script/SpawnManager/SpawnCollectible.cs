@@ -1,20 +1,16 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Serialization;
-using Random=UnityEngine.Random;
 
-public class SpawnObstacle : MonoBehaviour
+public class SpawnCollectible : MonoBehaviour
 {
+    [SerializeField] GameObject m_collect;
     
-    [SerializeField] GameObject m_obstacle;
-
     [SerializeField] private float m_maxSpawnX = 10;
     [SerializeField] private float m_minSpawnX = 1;
     [SerializeField] private float m_spawnHeight = 10;
     
-    private float m_spawnPosZ = 100;
+    [SerializeField] private float m_spawnPosZ;
     
     [SerializeField] private float m_spawnSpeedMax = 30;
     [SerializeField] private float m_spawnSpeedMin = 5;
@@ -27,14 +23,14 @@ public class SpawnObstacle : MonoBehaviour
     {
         while (m_countInstances < m_maxInstances)
         {
-            GenerateObstacle();
+            GenerateCollectible();
             m_countInstances++;
         }
     }
 
-    void GenerateObstacle()
+    void GenerateCollectible()
     {
-        Instantiate(m_obstacle, new Vector3(Random.Range(m_minSpawnX, m_maxSpawnX), m_spawnHeight, m_spawnPosZ),m_obstacle.transform.rotation);
+        Instantiate(m_collect, new Vector3(Random.Range(m_minSpawnX, m_maxSpawnX), m_spawnHeight, m_spawnPosZ),m_collect.transform.rotation);
         IncrementSpawnZ();
     }
 

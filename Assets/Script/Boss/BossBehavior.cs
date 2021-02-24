@@ -16,8 +16,6 @@ public class BossBehavior : MonoBehaviour
     [SerializeField] private float m_rightBand;
     
     //Behavior
-    [SerializeField] private float m_loopMovement = 1.0f;
-    [SerializeField] private float m_elapsedTime = 0f;
     [SerializeField] private bool m_inFight = true;
     [SerializeField] private bool m_leftOrRight = true;
     [SerializeField] private float m_movmentSpeed;
