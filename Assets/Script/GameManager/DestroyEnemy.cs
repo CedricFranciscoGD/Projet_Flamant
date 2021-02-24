@@ -12,7 +12,7 @@ public class DestroyEnemy : MonoBehaviour
             
             Destroy(p_other.gameObject);
             Destroy(gameObject);
-            print("OK");
+            //print("OK");
         }
     }
 }

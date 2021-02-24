@@ -18,13 +18,13 @@ public class CollideRetry : MonoBehaviour
     {
         if (other.CompareTag("Danger"))
         {
-            Debug.Log(message:"Danger");
+            //Debug.Log(message:"Danger");
             FindObjectOfType<GameManager>().EndGame();
         }
         
         else if (other.CompareTag("Enemy"))
         {
-            Debug.Log(message:"Enemy");
+            //Debug.Log(message:"Enemy");
             FindObjectOfType<GameManager>().EndGame();
         }
         
