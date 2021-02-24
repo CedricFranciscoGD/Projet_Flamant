@@ -114,7 +114,7 @@ MonoBehaviour:
   m_rightBand: 3
   m_inFight: 1
   m_leftOrRight: 1
-  m_movmentSpeed: 0.1
+  m_movmentSpeed: 0.01
   m_minMove: 10
   m_maxMove: 35
 --- !u!114 &3846906957722547057
