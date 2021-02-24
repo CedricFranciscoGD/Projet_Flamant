@@ -609,6 +609,7 @@ GameObject:
   - component: {fileID: 981992589}
   - component: {fileID: 981992590}
   - component: {fileID: 981992591}
+  - component: {fileID: 981992592}
   m_Layer: 0
   m_Name: SpawnManager
   m_TagString: Untagged
@@ -647,6 +648,7 @@ MonoBehaviour:
   m_maxSpawnX: 18
   m_minSpawnX: -3
   m_spawnHeight: 5
+  m_spawnPosZ: 0
   m_spawnSpeedMax: 10
   m_spawnSpeedMin: 1
   m_maxInstances: 50
@@ -667,6 +669,7 @@ MonoBehaviour:
   m_maxSpawnX: 18
   m_minSpawnX: -3
   m_spawnHeight: 5
+  m_spawnPosZ: 0
   m_spawnSpeedMax: 20
   m_spawnSpeedMin: 5
   m_maxInstances: 50
@@ -686,6 +689,7 @@ MonoBehaviour:
   m_maxSpawnX: 18
   m_minSpawnX: -3
   m_spawnHeight: 5
+  m_spawnPosZ: 0
   m_spawnSpeedMax: 45
   m_spawnSpeedMin: 30
   m_maxInstances: 50
@@ -705,9 +709,30 @@ MonoBehaviour:
   m_maxSpawnX: 18
   m_minSpawnX: -3
   m_spawnHeight: 5
+  m_spawnPosZ: 0
   m_spawnSpeedMax: 45
   m_spawnSpeedMin: 5
   m_maxInstances: 50
+--- !u!114 &981992592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981992586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceafd4e2f17a47d44ab4107542aa5bf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_decors: {fileID: 3002970619435263289, guid: 90d360054d9a5874f876ac41d64ec1c5,
+    type: 3}
+  m_riveGaucheX: 19
+  m_riveDroiteX: -4
+  m_spawnHeight: 5
+  m_spawnPosZ: 20
+  m_prefabLenghtX: 10
+  m_maxInstances: 100
 --- !u!1 &1698710805
 GameObject:
   m_ObjectHideFlags: 0
