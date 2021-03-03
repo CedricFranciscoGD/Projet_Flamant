@@ -8,6 +8,8 @@ TagManager:
   - Enemy
   - Bonus
   - Sensor
+  - Boss
+  - PlayerShoot
   layers:
   - Default
   - TransparentFX

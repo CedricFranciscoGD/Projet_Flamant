@@ -2048,6 +2048,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3062711367988511702, guid: fe73482f1e885ec4782eca07a1cb0e2c,
+        type: 3}
+      propertyPath: m_damageAmmo
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3846906957722546954, guid: fe73482f1e885ec4782eca07a1cb0e2c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2106,6 +2111,11 @@ PrefabInstance:
     - target: {fileID: 3846906957722547056, guid: fe73482f1e885ec4782eca07a1cb0e2c,
         type: 3}
       propertyPath: m_Name
+      value: Boss
+      objectReference: {fileID: 0}
+    - target: {fileID: 3846906957722547056, guid: fe73482f1e885ec4782eca07a1cb0e2c,
+        type: 3}
+      propertyPath: m_TagString
       value: Boss
       objectReference: {fileID: 0}
     m_RemovedComponents: []
