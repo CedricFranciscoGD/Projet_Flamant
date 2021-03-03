@@ -8,7 +8,7 @@ public class bossHpManager : MonoBehaviour
     //vars
     [SerializeField] public float m_bossHP;
     [SerializeField] public float m_damageAmmo;
-
+    
     //* Update is called once per frame
     
     void Update()
