@@ -570,9 +570,9 @@ MonoBehaviour:
   m_minSpawnX: -3
   m_spawnHeight: 5
   m_spawnPosZ: 0
-  m_spawnSpeedMax: 10
+  m_spawnSpeedMax: 7
   m_spawnSpeedMin: 1
-  m_maxInstances: 50
+  m_maxInstances: 100
 --- !u!114 &981992589
 MonoBehaviour:
   m_ObjectHideFlags: 0
