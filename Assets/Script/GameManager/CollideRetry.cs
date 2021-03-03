@@ -20,13 +20,13 @@ public class CollideRetry : MonoBehaviour
         if (other.CompareTag("Danger"))
         {
             //Debug.Log(message:"Danger");
-            SceneManager.LoadScene("Level_1");
+            SceneManager.LoadScene("Game_Over_Menu");
         }
         
         else if (other.CompareTag("Enemy"))
         {
             //Debug.Log(message:"Enemy");
-            SceneManager.LoadScene("Level_1");
+            SceneManager.LoadScene("Game_Over_Menu");
         }
         
     }
