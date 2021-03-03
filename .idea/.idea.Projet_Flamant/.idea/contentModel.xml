@@ -25,6 +25,7 @@
             <e p="DestroyEnemy.cs" t="Include" />
             <e p="GameManager.cs" t="Include" />
           </e>
+          <e p="MenuControl.cs" t="Include" />
           <e p="Player" t="Include">
             <e p="CharaController.cs" t="Include" />
             <e p="ShootEggs.cs" t="Include" />

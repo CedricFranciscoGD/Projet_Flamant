@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class SpawnCollectible : MonoBehaviour
 {
+    //GameObjects
     [SerializeField] GameObject m_collect;
     
+    //Spawn Settings
     [SerializeField] private float m_maxSpawnX = 10;
     [SerializeField] private float m_minSpawnX = 1;
     [SerializeField] private float m_spawnHeight = 10;
