@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class bossHpManager : MonoBehaviour
 {
@@ -35,9 +36,12 @@ public class bossHpManager : MonoBehaviour
     }
 
     //win function for boss kill
+    //Launch win menu
+    //Game can be restart from this menu
     void KillBoss()
     {
         Debug.Log("BossKilled");
         Destroy(gameObject);
+        SceneManager.LoadScene("Win_Menu");
     }
 }

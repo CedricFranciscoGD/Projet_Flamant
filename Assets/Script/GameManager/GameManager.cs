@@ -22,6 +22,9 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    
+    
+    
     /// <summary>
     /// Relance le jeu à la scène 1
     /// </summary>

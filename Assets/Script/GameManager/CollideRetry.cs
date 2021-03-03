@@ -19,13 +19,13 @@ public class CollideRetry : MonoBehaviour
     {
         if (other.CompareTag("Danger"))
         {
-            Debug.Log(message:"Danger");
+            //Debug.Log(message:"Danger");
             SceneManager.LoadScene("Level_1");
         }
         
         else if (other.CompareTag("Enemy"))
         {
-            Debug.Log(message:"Enemy");
+            //Debug.Log(message:"Enemy");
             SceneManager.LoadScene("Level_1");
         }
         
