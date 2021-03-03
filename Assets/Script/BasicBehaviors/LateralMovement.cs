@@ -16,13 +16,16 @@ public class LateralMovement : MonoBehaviour
 
     [SerializeField]
     private float m_rightBand;
-    private float m_loopMovement;
+    private float m_loopMovement; //time reference
     [SerializeField] private float m_elapsedTime = 0f;
-    // Update is called once per frame
+
+    //range setting for a random move lentgh
+    [SerializeField] private float m_minMoveRange;
+    [SerializeField] private float m_maxMoveRange;
 
     private void Start()
     {
-        m_loopMovement = Random.Range(1f, 2f);
+        m_loopMovement = Random.Range(m_minMoveRange, m_maxMoveRange);
     }
 
     void Update()
@@ -59,6 +62,19 @@ public class LateralMovement : MonoBehaviour
         if(transform.position.x < m_rightBand)
         {
             transform.position = new Vector3(m_rightBand, transform.position.y, transform.position.z);
+        }
+    }
+    
+    //Go back on collide
+    private void OnTriggerEnter(Collider p_other)
+    {
+        if (m_loopMovement < 2)
+        {
+            m_loopMovement = 2;
+        }
+        else
+        {
+            m_loopMovement = 0;
         }
     }
 }
