@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 3846906957722546959}
   - component: {fileID: 3846906957722546958}
   - component: {fileID: 3846906957722547057}
-  - component: {fileID: 3062711367988511702}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Enemy
@@ -30,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3846906957722547056}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.25, y: 5.53, z: 5.46}
+  m_LocalPosition: {x: 6.545, y: 5.53, z: 5.46}
   m_LocalScale: {x: 4, y: 1, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
@@ -134,17 +133,3 @@ MonoBehaviour:
   m_popOffset: {x: 2, y: 0, z: 0}
   m_time: 0
   m_trigger: 3
---- !u!114 &3062711367988511702
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3846906957722547056}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cde1eed8666150f489ef404fb349f97a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_bossHP: 100
-  m_damageAmmo: 100

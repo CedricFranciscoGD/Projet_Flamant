@@ -45,12 +45,12 @@ public class BossBehavior : MonoBehaviour
                 {
                     if (m_leftOrRight)
                     {
-                        transform.Translate(Vector3.right * m_speedEnemy * Time.deltaTime);
+                        transform.Translate(Vector3.up * m_speedEnemy * Time.deltaTime);
                         m_randomMove -= m_movmentSpeed;
                     }
                     else
                     {
-                        transform.Translate(Vector3.left * m_speedEnemy * Time.deltaTime);
+                        transform.Translate(Vector3.down * m_speedEnemy * Time.deltaTime);
                         m_randomMove -= m_movmentSpeed;
                     }
 

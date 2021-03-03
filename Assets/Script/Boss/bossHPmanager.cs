@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class bossHpManager : MonoBehaviour
+public class BossHpManager : MonoBehaviour
 {
     //vars
     [SerializeField] public float m_bossHP;
