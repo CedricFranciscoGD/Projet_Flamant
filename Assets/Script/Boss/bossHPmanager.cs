@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class BossHpManager : MonoBehaviour
+public class bossHPmanager : MonoBehaviour
 {
     
     //vars

@@ -11,6 +11,11 @@ GameObject:
   - component: {fileID: 4582588007782823364}
   - component: {fileID: 592016738205514337}
   - component: {fileID: 3446295364225978027}
+  - component: {fileID: 4474624490432370926}
+  - component: {fileID: 6465212976684525002}
+  - component: {fileID: 5626050029509633269}
+  - component: {fileID: 8811280460659192465}
+  - component: {fileID: 1601302661129873240}
   m_Layer: 0
   m_Name: BossMarabout
   m_TagString: Boss
@@ -79,3 +84,88 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &4474624490432370926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3806473177256456062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c461b385b6132ce4290488a5934c4ebe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bossHP: 0
+  m_damageAmmo: 0
+  m_slider: {fileID: 0}
+--- !u!114 &6465212976684525002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3806473177256456062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cb9e0151362f88449fe5a61c4a06c39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bossAmmo: {fileID: 0}
+  m_popOffset: {x: -1, y: 0, z: 0}
+  m_time: 0
+  m_trigger: 0
+--- !u!114 &5626050029509633269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3806473177256456062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc328a12ebe8d954ba9266631e307f44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_speedEnemy: 0
+  m_forwardEnemy: 0
+  m_leftBand: 0
+  m_rightBand: 0
+  m_inFight: 1
+  m_movmentSpeed: 0
+  m_minMove: 0
+  m_maxMove: 0
+--- !u!114 &8811280460659192465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3806473177256456062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cde1eed8666150f489ef404fb349f97a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bossHP: 100
+  m_damageAmmo: 20
+--- !u!114 &1601302661129873240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3806473177256456062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc328a12ebe8d954ba9266631e307f44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_speedEnemy: 4
+  m_forwardEnemy: 10
+  m_leftBand: 11
+  m_rightBand: 3
+  m_inFight: 1
+  m_movmentSpeed: 0.01
+  m_minMove: 10
+  m_maxMove: 35
