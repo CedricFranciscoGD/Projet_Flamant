@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ShootEggs : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class ShootEggs : MonoBehaviour
 
     [SerializeField] private float m_ammoRemain;
     [SerializeField] private float m_ammoCapacity;
+
+    public Text m_ammoDisplay;
     
     
     
@@ -29,6 +32,8 @@ public class ShootEggs : MonoBehaviour
     /// </summary>
     void Update()
     {
+        // AmmoDisplay reacts from player shooting
+        m_ammoDisplay.text = m_ammoRemain.ToString();
         if (m_ammoRemain > 0)
         {
             if(Input.GetKeyDown(KeyCode.Space))
