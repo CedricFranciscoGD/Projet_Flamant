@@ -15,17 +15,17 @@ public class HealthBar : MonoBehaviour
     }
    
     // Update is called once per frame
-    void Update()
-    {
+    
+    // If boss get hit from player ammo
+    // Boss loose life and show it on his UI health bar
         public void OnTriggerEnter(Collider other)
         {
             if (other.CompareTag("PlayerShoot"))
             {
-                m_bossHP -= m_damageAmmo;
+                m_slider.value -= m_damageAmmo;
                 Debug.Log(message:"AmmoHit");
                 Debug.Log(m_bossHP);
             }
             
         }
-    }
 }
