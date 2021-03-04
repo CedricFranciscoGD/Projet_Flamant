@@ -44,4 +44,19 @@ public class EnemynotmovingSpawn : MonoBehaviour
         //Deplace le spawn sur l'axe Z
         m_spawnPosZ -= Random.Range(m_spawnSpeedMin, m_spawnSpeedMax);
     }
+    
+    private void OnTriggerEnter(Collider p_other)
+    {
+        if (p_other.CompareTag("Enemy"))
+        {
+            Destroy(gameObject);
+            Debug.Log("Spawnkill(EnemyOverlap)");
+        }
+        
+        if (p_other.CompareTag("Danger"))
+        {
+            Destroy(gameObject);
+            Debug.Log("Spawnkill(ObstacleOverlap)");
+        }
+    }
 }
