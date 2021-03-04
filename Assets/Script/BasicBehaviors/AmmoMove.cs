@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -12,5 +13,13 @@ public class AmmoMove : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector3.back * m_speed * Time.deltaTime);   
+    }
+
+    private void OnTriggerEnter(Collider p_other)
+    {
+        if (p_other.CompareTag("Boss"))
+        {
+            Destroy(gameObject);
+        }
     }
 }

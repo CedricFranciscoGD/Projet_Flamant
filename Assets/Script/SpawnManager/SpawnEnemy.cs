@@ -41,8 +41,18 @@ public class SpawnEnemy : MonoBehaviour
         m_spawnPosZ -= Random.Range(m_spawnSpeedMin, m_spawnSpeedMax);
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider p_other)
     {
-        Destroy(gameObject);
+        if (p_other.CompareTag("Enemy"))
+        {
+            Destroy(gameObject);
+            Debug.Log("Spawnkill(EnemyOverlap)");
+        }
+        
+        if (p_other.CompareTag("Danger"))
+        {
+            Destroy(gameObject);
+            Debug.Log("Spawnkill(ObstacleOverlap)");
+        }
     }
 }

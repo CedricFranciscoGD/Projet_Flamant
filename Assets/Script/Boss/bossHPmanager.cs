@@ -24,16 +24,16 @@ public class BossHpManager : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("PlayerShoot"))
-            {
+        {
                 m_bossHP -= m_damageAmmo;
                 Debug.Log(message:"AmmoHit");
                 Debug.Log(m_bossHP);
-            }
-    //win function trigger when boss die
-        if (m_bossHP <= 0)
-            {
+        }
+        //win function trigger when boss die
+        if (m_bossHP < 1)
+        {
                 KillBoss();
-            }
+        }
     }
 
     //win function for boss kill
