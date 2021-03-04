@@ -43,6 +43,6 @@ public class SpawnEnemy : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Destroy(GameObject);
+        Destroy(gameObject);
     }
 }
