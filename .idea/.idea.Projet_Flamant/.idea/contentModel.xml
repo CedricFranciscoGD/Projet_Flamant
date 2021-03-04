@@ -37,6 +37,7 @@
             <e p="SpawnDecors.cs" t="Include" />
             <e p="SpawnEnemy.cs" t="Include" />
             <e p="SpawnObstacle.cs" t="Include" />
+            <e p="SpawnTrees.cs" t="Include" />
           </e>
         </e>
       </e>

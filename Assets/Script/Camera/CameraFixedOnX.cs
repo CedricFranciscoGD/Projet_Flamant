@@ -6,7 +6,7 @@ using UnityEngine.Serialization;
 public class CameraFixedOnX : MonoBehaviour
 {
     // Position de la Camera en X, Y et Z
-    [SerializeField]private float m_fixedOnXAxes = 10;
+    [SerializeField]private float m_fixedOnXAxes = -10;
     [SerializeField]private float m_cameraDistOffsetY = 10;
     [SerializeField]private float m_cameraDistOffsetZ = 10;
     

@@ -797,7 +797,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28eb717241fa5014187ce2bcacb381f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_fixedOnXAxes: -3.6
+  m_fixedOnXAxes: 0
   m_cameraDistOffsetY: -9.6
   m_cameraDistOffsetZ: -4.09
 --- !u!1 &981992586
@@ -814,6 +814,7 @@ GameObject:
   - component: {fileID: 981992590}
   - component: {fileID: 981992591}
   - component: {fileID: 981992592}
+  - component: {fileID: 981992593}
   m_Layer: 0
   m_Name: SpawnManager
   m_TagString: Untagged
@@ -868,7 +869,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d7407b9546c2f64a9912639a63a600e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_collect: {fileID: 1184123326491432794, guid: c63aba9c5b9a670408ede5e868eab3c3,
+  m_collect: {fileID: 4088424880303298318, guid: 8e63a0c8c4ca7304aa30100472980c10,
     type: 3}
   m_maxSpawnX: 18
   m_minSpawnX: -3
@@ -909,10 +910,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98392b9fab4db2b4f87be9c30cbb68ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_enemy: {fileID: 3172389100718571264, guid: ae01532729e67574e93830069e763fe2, type: 3}
-  m_maxSpawnX: 18
+  m_enemy: {fileID: 5919611892407271275, guid: a68aa1c0f69d5e54ea8167efda40eec2, type: 3}
+  m_maxSpawnX: 16
   m_minSpawnX: -3
-  m_spawnHeight: 5
+  m_spawnHeight: 4.5
   m_spawnPosZ: 0
   m_spawnSpeedMax: 45
   m_spawnSpeedMin: 5
@@ -929,19 +930,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceafd4e2f17a47d44ab4107542aa5bf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_decors: {fileID: 3002970619435263289, guid: 90d360054d9a5874f876ac41d64ec1c5,
+  m_decors: {fileID: 6806110398574916991, guid: 28099cfcb683f874c8ac93426f4caaeb,
     type: 3}
-  m_Ground_Water: {fileID: 6421457645700621381, guid: c7cea4ee1de779744999151335889c20,
+  m_Ground_Water: {fileID: 3628509884519756993, guid: c7cea4ee1de779744999151335889c20,
     type: 3}
-  m_riveGaucheX: 26
-  m_riveDroiteX: -10
+  m_riveGaucheX: 28
+  m_riveDroiteX: -13
   m_spawnHeight: 4.5
   m_waterSpawnX: 7.9
   m_riveSpawnPosZ: 50
   m_waterSpawnPosZ: 50
-  m_riveLenghtX: 10
+  m_riveLenghtX: 43
   m_waterLenghtX: 10
   m_maxInstances: 100
+--- !u!114 &981992593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981992586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ca5f2f9d1e256c4a9b6141cbbc1e02d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Tree1: {fileID: 3184048710263449470, guid: 08a2ba93b27026b4db1726aebbc24189, type: 3}
+  m_Tree2: {fileID: 9026512817849742743, guid: b64393c71d7921b418a76437c304fbcb, type: 3}
+  m_Tree3: {fileID: 8513452018250820267, guid: c4b1225f34509bd43bf0eb5392734eca, type: 3}
+  m_maxSpawnX: 17
+  m_minSpawnX: 29
+  m_spawnHeight: 4
+  m_spawnPosZ: 40
+  m_spawnSpeedMax: 3
+  m_spawnSpeedMin: 1
+  m_maxInstances: 50
 --- !u!1 &1201983640
 GameObject:
   m_ObjectHideFlags: 0
