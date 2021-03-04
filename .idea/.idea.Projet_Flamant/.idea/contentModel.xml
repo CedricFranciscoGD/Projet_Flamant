@@ -15,6 +15,7 @@
             <e p="BossBehavior.cs" t="Include" />
             <e p="bossHPmanager.cs" t="Include" />
             <e p="BossShoot.cs" t="Include" />
+            <e p="HealthBar.cs" t="Include" />
           </e>
           <e p="Camera" t="Include">
             <e p="CameraFixedOnX.cs" t="Include" />
