@@ -32,6 +32,7 @@ public class ShootEggs : MonoBehaviour
     /// </summary>
     void Update()
     {
+        // AmmoDisplay reacts from player shooting
         m_ammoDisplay.text = m_ammoRemain.ToString();
         if (m_ammoRemain > 0)
         {
