@@ -52,6 +52,11 @@ public class SpawnObstacle : MonoBehaviour
         }
         IncrementSpawnZ();
     }
+    
+    private void OnTriggerEnter(Collider p_other)
+    {
+        Destroy(gameObject);
+    }
 
     void IncrementSpawnZ()
     {

@@ -35,6 +35,11 @@ public class SpawnCollectible : MonoBehaviour
         Instantiate(m_collect, new Vector3(Random.Range(m_minSpawnX, m_maxSpawnX), m_spawnHeight, m_spawnPosZ),m_collect.transform.rotation);
         IncrementSpawnZ();
     }
+    
+    private void OnTriggerEnter(Collider p_other)
+    {
+        Destroy(gameObject);
+    }
 
     void IncrementSpawnZ()
     {

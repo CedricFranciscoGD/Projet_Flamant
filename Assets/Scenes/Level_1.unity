@@ -873,7 +873,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d7407b9546c2f64a9912639a63a600e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_collect: {fileID: 4088424880303298318, guid: 8e63a0c8c4ca7304aa30100472980c10,
+  m_collect: {fileID: 1184123326491432794, guid: c63aba9c5b9a670408ede5e868eab3c3,
     type: 3}
   m_maxSpawnX: 18
   m_minSpawnX: -3
@@ -894,11 +894,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa33e6843631dcb46ade2764ee5a2a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_enemy: {fileID: 915320980796110969, guid: ffb07bc6f26a3174db7756f3180c1fbf, type: 3}
+  m_enemy: {fileID: 2709667080912823361, guid: 8a4ecea91c7d99442bc4c05274c61f11, type: 3}
   m_maxSpawnX: 18
   m_minSpawnX: -3
-  m_spawnHeight: 5
-  m_spawnPosZ: 0
+  m_spawnHeight: 4.5
+  m_spawnPosZ: -50
   m_spawnSpeedMax: 45
   m_spawnSpeedMin: 30
   m_maxInstances: 50

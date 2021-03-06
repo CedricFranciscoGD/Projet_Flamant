@@ -68,13 +68,6 @@ public class LateralMovement : MonoBehaviour
     //Go back on collide
     private void OnTriggerEnter(Collider p_other)
     {
-        if (m_loopMovement < 2)
-        {
-            m_loopMovement = 2;
-        }
-        else
-        {
-            m_loopMovement = 0;
-        }
+        Destroy(gameObject);
     }
 }
