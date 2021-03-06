@@ -848,11 +848,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 237881da42a467a4cb8a6545296dd20a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_obstacle: {fileID: 8586340751870682499, guid: b360406ee08afde4499bed1e2120de4c,
+  m_rockObstacle1: {fileID: 3123099083794481294, guid: 43dd230dc7940444693e8174ec669407,
+    type: 3}
+  m_rockObstacle2: {fileID: 2938978008898329985, guid: b7ab47898b30711469a88d454751dd2f,
+    type: 3}
+  m_rockObstacle3: {fileID: 7810380945495254244, guid: e781d7e8031fc6d4b8432a8703d553b0,
     type: 3}
   m_maxSpawnX: 18
   m_minSpawnX: -3
-  m_spawnHeight: 5
+  m_spawnHeight: 4.5
   m_spawnPosZ: 0
   m_spawnSpeedMax: 10
   m_spawnSpeedMin: 1
@@ -911,7 +915,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_enemy: {fileID: 5919611892407271275, guid: a68aa1c0f69d5e54ea8167efda40eec2, type: 3}
-  m_maxSpawnX: 16
+  m_maxSpawnX: 14
   m_minSpawnX: -3
   m_spawnHeight: 4.5
   m_spawnPosZ: 0
@@ -1187,6 +1191,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8976766635810851506, guid: b794628387c77e444a0e1a39d5e17c2e,
         type: 3}
+    - target: {fileID: 6465212976684525002, guid: 38e1c95b5fac4e241aebbaf0abcd912f,
+        type: 3}
+      propertyPath: m_popOffset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6465212976684525002, guid: 38e1c95b5fac4e241aebbaf0abcd912f,
+        type: 3}
+      propertyPath: m_popOffset.z
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5626050029509633269, guid: 38e1c95b5fac4e241aebbaf0abcd912f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 38e1c95b5fac4e241aebbaf0abcd912f, type: 3}
