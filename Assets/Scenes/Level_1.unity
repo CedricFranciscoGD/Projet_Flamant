@@ -546,13 +546,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
-  m_LocalRotation: {x: 0.8059802, y: -0.2571274, z: -0.029544648, w: 0.53236145}
+  m_LocalRotation: {x: 0.82368696, y: 0.193021, z: 0.24789502, w: 0.47204962}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 122.547, y: 36.68399, z: 55.984993}
+  m_LocalEulerAnglesHint: {x: 137.004, y: -53.85199, z: -49.002014}
 --- !u!1 &802128567
 GameObject:
   m_ObjectHideFlags: 0
@@ -955,16 +955,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ca5f2f9d1e256c4a9b6141cbbc1e02d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Tree1: {fileID: 3184048710263449470, guid: 08a2ba93b27026b4db1726aebbc24189, type: 3}
-  m_Tree2: {fileID: 9026512817849742743, guid: b64393c71d7921b418a76437c304fbcb, type: 3}
-  m_Tree3: {fileID: 8513452018250820267, guid: c4b1225f34509bd43bf0eb5392734eca, type: 3}
+  m_tree1: {fileID: 3184048710263449470, guid: 08a2ba93b27026b4db1726aebbc24189, type: 3}
+  m_tree2: {fileID: 9026512817849742743, guid: b64393c71d7921b418a76437c304fbcb, type: 3}
+  m_tree3: {fileID: 8513452018250820267, guid: c4b1225f34509bd43bf0eb5392734eca, type: 3}
   m_maxSpawnX: 17
   m_minSpawnX: 29
   m_spawnHeight: 4
   m_spawnPosZ: 40
   m_spawnSpeedMax: 3
   m_spawnSpeedMin: 1
-  m_maxInstances: 50
+  m_maxInstances: 150
 --- !u!1 &1201983640
 GameObject:
   m_ObjectHideFlags: 0
