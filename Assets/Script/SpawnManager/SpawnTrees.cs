@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class SpawnTrees : MonoBehaviour
 {
@@ -52,5 +54,10 @@ public class SpawnTrees : MonoBehaviour
     void IncrementSpawnZ()
     {
         m_spawnPosZ -= Random.Range(m_spawnSpeedMin, m_spawnSpeedMax);
+    }
+
+    private void OnTriggerEnter(Collider p_other)
+    {
+        Destroy(gameObject);
     }
 }
