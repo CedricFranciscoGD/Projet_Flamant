@@ -915,7 +915,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_enemy: {fileID: 5919611892407271275, guid: a68aa1c0f69d5e54ea8167efda40eec2, type: 3}
-  m_maxSpawnX: 14
+  m_maxSpawnX: 11
   m_minSpawnX: -3
   m_spawnHeight: 4.5
   m_spawnPosZ: 0
