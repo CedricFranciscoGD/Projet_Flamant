@@ -815,6 +815,7 @@ GameObject:
   - component: {fileID: 981992591}
   - component: {fileID: 981992592}
   - component: {fileID: 981992593}
+  - component: {fileID: 981992594}
   m_Layer: 0
   m_Name: SpawnManager
   m_TagString: Untagged
@@ -829,13 +830,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 981992586}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 4.9370117, y: 6.2351074, z: 26.259766}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!114 &981992588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -934,9 +935,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceafd4e2f17a47d44ab4107542aa5bf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_decors: {fileID: 6806110398574916991, guid: 28099cfcb683f874c8ac93426f4caaeb,
+  m_decors: {fileID: 1379404648561097168, guid: b664b499e1830a3488bb2acb083f03b0,
     type: 3}
-  m_Ground_Water: {fileID: 3628509884519756993, guid: c7cea4ee1de779744999151335889c20,
+  m_Ground_Water: {fileID: 6308067892489721798, guid: 8fdfb6f665b47ed41b1ad85e7abc1fb7,
     type: 3}
   m_riveGaucheX: 28
   m_riveDroiteX: -13
@@ -959,9 +960,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ca5f2f9d1e256c4a9b6141cbbc1e02d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_tree1: {fileID: 3184048710263449470, guid: 08a2ba93b27026b4db1726aebbc24189, type: 3}
-  m_tree2: {fileID: 9026512817849742743, guid: b64393c71d7921b418a76437c304fbcb, type: 3}
-  m_tree3: {fileID: 8513452018250820267, guid: c4b1225f34509bd43bf0eb5392734eca, type: 3}
+  m_tree1: {fileID: 5674983928838403930, guid: a2808e464f12b974f8256f8704de712c, type: 3}
+  m_tree2: {fileID: 1889877588521029208, guid: 7cc03f8f46b451b40baea42af9d7590f, type: 3}
+  m_tree3: {fileID: 5403496526604375437, guid: 33b3ad543def3a644a08abd414f08394, type: 3}
   m_maxSpawnX: 17
   m_minSpawnX: 29
   m_spawnHeight: 4
@@ -969,6 +970,37 @@ MonoBehaviour:
   m_spawnSpeedMax: 3
   m_spawnSpeedMin: 1
   m_maxInstances: 150
+--- !u!114 &981992594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981992586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 288cfbdd4fd3d664d8be92bd6f728d94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_onWater1: {fileID: 3977799021103948126, guid: 92e43f3b761072642a09a2a647e5ac38,
+    type: 3}
+  m_onWater2: {fileID: 1951292841767999835, guid: 1ce45ffd66900d9439a1ae71a63266f2,
+    type: 3}
+  m_onGround1: {fileID: 5067442228517350660, guid: 61a2aecc20ab19c44a6deda7c41de5ea,
+    type: 3}
+  m_maxWaterSpawnX: 19
+  m_minWaterSpawnX: 1
+  m_maxGroundSpawnX: 19
+  m_minGroundSpawnX: 16
+  m_groundSpawnHeight: 4.5
+  m_waterSpawnHeight: 4.5
+  m_spawnWaterPosZ: 0
+  m_spawnGroundPosZ: 0
+  m_spawnWaterSpeedMax: 1
+  m_spawnWaterSpeedMin: 0
+  m_spawnGroundSpeedMax: 5
+  m_spawnGroundSpeedMin: 3
+  m_maxInstances: 500
 --- !u!1 &1201983640
 GameObject:
   m_ObjectHideFlags: 0

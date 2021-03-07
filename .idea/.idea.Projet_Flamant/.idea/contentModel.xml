@@ -33,6 +33,7 @@
           </e>
           <e p="SpawnManager" t="Include">
             <e p="EnemynotmovingSpawn.cs" t="Include" />
+            <e p="PlantsSpawn.cs" t="Include" />
             <e p="SpawnCollectible.cs" t="Include" />
             <e p="SpawnDecors.cs" t="Include" />
             <e p="SpawnEnemy.cs" t="Include" />

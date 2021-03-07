@@ -39,7 +39,7 @@ public class SpawnDecors : MonoBehaviour
         //Instantiate rive gauche/droite/Eau
         Instantiate(m_decors, new Vector3(m_riveGaucheX, m_spawnHeight, m_riveSpawnPosZ),m_decors.transform.rotation); //Gauche
         Instantiate(m_decors, new Vector3(m_riveDroiteX, m_spawnHeight, m_riveSpawnPosZ),m_decors.transform.rotation); //Droite
-        Instantiate(m_Ground_Water, new Vector3(m_waterSpawnX, m_spawnHeight, m_waterSpawnPosZ),m_decors.transform.rotation); //Eau
+        Instantiate(m_Ground_Water, new Vector3(m_waterSpawnX, m_spawnHeight, m_waterSpawnPosZ),m_Ground_Water.transform.rotation); //Eau
         IncrementSpawnZ(); //Axe Z spawn function
     }
 

@@ -29,12 +29,12 @@ public class SpawnTrees : MonoBehaviour
         while (m_countInstances < m_maxInstances)
         {
             m_pickTree = Random.Range(1, 4);
-            GenerateObstacle();
+            GenerateTree();
             m_countInstances++;
         }
     }
 
-    void GenerateObstacle()
+    void GenerateTree()
     {
         if (m_pickTree == 2)
         {
