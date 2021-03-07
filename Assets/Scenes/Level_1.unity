@@ -773,7 +773,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_collect: {fileID: 7663656631681067157, guid: dc20189c6e163904e8330135d773b5cf,
     type: 3}
-  m_maxSpawnX: 18
+  m_maxSpawnX: 17
   m_minSpawnX: -3
   m_spawnHeight: 5
   m_spawnPosZ: 0
@@ -860,7 +860,7 @@ MonoBehaviour:
   m_tree1: {fileID: 5674983928838403930, guid: a2808e464f12b974f8256f8704de712c, type: 3}
   m_tree2: {fileID: 1889877588521029208, guid: 7cc03f8f46b451b40baea42af9d7590f, type: 3}
   m_tree3: {fileID: 5403496526604375437, guid: 33b3ad543def3a644a08abd414f08394, type: 3}
-  m_maxSpawnX: 17
+  m_maxSpawnX: 18
   m_minSpawnX: 29
   m_spawnHeight: 4
   m_spawnPosZ: 40
@@ -885,16 +885,16 @@ MonoBehaviour:
     type: 3}
   m_onGround1: {fileID: 5067442228517350660, guid: 61a2aecc20ab19c44a6deda7c41de5ea,
     type: 3}
-  m_maxWaterSpawnX: 19
+  m_maxWaterSpawnX: 18
   m_minWaterSpawnX: 1
-  m_maxGroundSpawnX: 19
-  m_minGroundSpawnX: 16
+  m_maxGroundSpawnX: 18
+  m_minGroundSpawnX: 1
   m_groundSpawnHeight: 4.5
   m_waterSpawnHeight: 4.5
-  m_spawnWaterPosZ: 0
-  m_spawnGroundPosZ: 0
-  m_spawnWaterSpeedMax: 1
-  m_spawnWaterSpeedMin: 0
+  m_spawnWaterPosZ: 50
+  m_spawnGroundPosZ: 50
+  m_spawnWaterSpeedMax: 5
+  m_spawnWaterSpeedMin: 2
   m_spawnGroundSpeedMax: 5
   m_spawnGroundSpeedMin: 3
   m_maxInstances: 500
@@ -1426,8 +1426,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.94150496, y: 0.7091836, z: 0.8669817}
-  m_Center: {x: -0.14327899, y: 5.986494e-17, z: 0.22051062}
+  m_Size: {x: 0.54546356, y: 0.70918363, z: 1.0394285}
+  m_Center: {x: 0.05474174, y: 0, z: 0.13428724}
 --- !u!114 &1576888575007793587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1506,6 +1506,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerFlamand
       objectReference: {fileID: 0}
+    - target: {fileID: 7294891070604339078, guid: cd88c4441dfc6d74c9e1e1f3ef1b3249,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.24866176
+      objectReference: {fileID: 0}
+    - target: {fileID: 7294891070604339078, guid: cd88c4441dfc6d74c9e1e1f3ef1b3249,
+        type: 3}
+      propertyPath: m_Center.x
+      value: -0.45229614
+      objectReference: {fileID: 0}
+    - target: {fileID: 7294891070604339078, guid: cd88c4441dfc6d74c9e1e1f3ef1b3249,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0.31022358
+      objectReference: {fileID: 0}
+    - target: {fileID: 7294891070604339078, guid: cd88c4441dfc6d74c9e1e1f3ef1b3249,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1.0886464
+      objectReference: {fileID: 0}
+    - target: {fileID: 7294891070604339078, guid: cd88c4441dfc6d74c9e1e1f3ef1b3249,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 0.62171555
+      objectReference: {fileID: 0}
+    - target: {fileID: 7294891070604339078, guid: cd88c4441dfc6d74c9e1e1f3ef1b3249,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 0.09406471
+      objectReference: {fileID: 0}
     - target: {fileID: 7294891070604339079, guid: cd88c4441dfc6d74c9e1e1f3ef1b3249,
         type: 3}
       propertyPath: m_ammoDisplay
@@ -1519,7 +1549,7 @@ PrefabInstance:
     - target: {fileID: 7959963270582517048, guid: cd88c4441dfc6d74c9e1e1f3ef1b3249,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.5
+      value: 4.656
       objectReference: {fileID: 0}
     - target: {fileID: 7959963270582517048, guid: cd88c4441dfc6d74c9e1e1f3ef1b3249,
         type: 3}
@@ -1593,7 +1623,7 @@ PrefabInstance:
     - target: {fileID: 4053099400018813770, guid: 183fa3d214207de4bb4ba91cbeec19ce,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.71
+      value: 6.07
       objectReference: {fileID: 0}
     - target: {fileID: 4053099400018813770, guid: 183fa3d214207de4bb4ba91cbeec19ce,
         type: 3}
