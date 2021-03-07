@@ -56,13 +56,13 @@ public class ShootEggs : MonoBehaviour
     /// Sinon rien ne se passe
     /// </summary>
     /// <param name="other"></param>
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider p_other)
     {
         if (m_ammoRemain < m_ammoCapacity)
         {
-            if (other.CompareTag("Bonus"))
+            if (p_other.CompareTag("Bonus"))
             {
-                Destroy(other.gameObject);
+                Destroy(p_other.gameObject);
                 //Debug.Log(message:"Bonus");
                 m_ammoRemain += 1;
             }
