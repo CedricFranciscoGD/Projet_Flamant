@@ -31,7 +31,7 @@ public class BossBehavior : MonoBehaviour
         //behavior
         if (m_inFight)
         {
-            transform.Translate(Vector3.back * m_forwardEnemy * Time.deltaTime);
+            transform.Translate(Vector3.left * m_forwardEnemy * Time.deltaTime);
 
             if (m_moveIsDone == true)
             {
