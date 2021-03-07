@@ -11,7 +11,7 @@ public class CameraFixedOnX : MonoBehaviour
     [SerializeField]private float m_cameraDistOffsetZ = 10;
     
     private Camera m_mainCamera;
-    private GameObject m_player;
+    [SerializeField]private GameObject m_player;
  
     /// <summary>
     /// Récupère la position du joueur
@@ -19,7 +19,6 @@ public class CameraFixedOnX : MonoBehaviour
     void Start () 
     {
         m_mainCamera = GetComponent<Camera>();
-        m_player = GameObject.Find("Player");
     }
      
     /// <summary>
