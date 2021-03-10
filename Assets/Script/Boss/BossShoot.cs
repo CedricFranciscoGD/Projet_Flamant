@@ -5,12 +5,12 @@ using UnityEngine;
 public class BossShoot : MonoBehaviour
 {
     //Ammo GameObject and offset setting
-    [SerializeField] private GameObject m_bossAmmo;
-    [SerializeField] private Vector3 m_popOffset = Vector3.left;
+    [SerializeField] private GameObject m_bossAmmo;//gameobject for ammo boss
+    [SerializeField] private Vector3 m_popOffset = Vector3.left;//offset setting for ammo prefab
     
     //Shootint values
-    [SerializeField] private float m_time;
-    [SerializeField] public float m_trigger;
+    [SerializeField] private float m_time;//time var
+    [SerializeField] public float m_trigger;//shoot frequency
 
     void Update()
     {
@@ -24,8 +24,10 @@ public class BossShoot : MonoBehaviour
         }
     }
     
+    //shoot function
     void BossShot()
     {
+        //instantiate
         Instantiate(m_bossAmmo, transform.position + m_popOffset, m_bossAmmo.transform.rotation);
     }
 }

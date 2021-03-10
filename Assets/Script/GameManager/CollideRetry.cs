@@ -6,9 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class CollideRetry : MonoBehaviour
 {
-    [SerializeField] private float m_xPos;
-    [SerializeField] private float m_yPos;
-    [SerializeField] private float m_zPos;
+    [SerializeField] private float m_xPos;//position axe X
+    [SerializeField] private float m_yPos;//position axe Y
+    [SerializeField] private float m_zPos;//position axe Z
     
 
     /// <summary>

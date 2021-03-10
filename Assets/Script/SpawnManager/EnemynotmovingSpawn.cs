@@ -14,12 +14,12 @@ public class EnemynotmovingSpawn : MonoBehaviour
     [SerializeField] private float m_spawnPosZ; //Position axe Z
     
     //Random range for spawn speed
-    [SerializeField] private float m_spawnSpeedMax = 30;
-    [SerializeField] private float m_spawnSpeedMin = 5;
+    [SerializeField] private float m_spawnSpeedMax = 30;//max border spawn range speed
+    [SerializeField] private float m_spawnSpeedMin = 5;//min border spawn range speed
     
     //Itérations spawns
-    [SerializeField] private int m_maxInstances = 50;
-    private int m_countInstances = 0;
+    [SerializeField] private int m_maxInstances = 50;//max prefab per pop
+    private int m_countInstances = 0;//instantiate count
     
     // Update is called once per frame
     void Update()
@@ -36,7 +36,7 @@ public class EnemynotmovingSpawn : MonoBehaviour
     {
         //Instantiate Enemy spawn
         Instantiate(m_enemy, new Vector3(Random.Range(m_minSpawnX, m_maxSpawnX), m_spawnHeight, m_spawnPosZ),m_enemy.transform.rotation);
-        IncrementSpawnZ();
+        IncrementSpawnZ();//moving spawn on Z function
     }
 
     void IncrementSpawnZ()
@@ -45,8 +45,10 @@ public class EnemynotmovingSpawn : MonoBehaviour
         m_spawnPosZ -= Random.Range(m_spawnSpeedMin, m_spawnSpeedMax);
     }
     
+    //kill on collide to avoid overlapping object in scene
     private void OnTriggerEnter(Collider p_other)
     {
+        
         if (p_other.CompareTag("Enemy"))
         {
             Destroy(gameObject);

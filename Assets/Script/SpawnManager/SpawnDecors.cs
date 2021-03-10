@@ -5,8 +5,8 @@ using UnityEngine;
 public class SpawnDecors : MonoBehaviour
 {
     //GameObjects
-    [SerializeField] GameObject m_decors;
-    [SerializeField] GameObject m_Ground_Water;
+    [SerializeField] GameObject m_decors;//rives droite et gauches
+    [SerializeField] GameObject m_Ground_Water;//water ground
 
     //Spawn Settings
     [SerializeField] private float m_riveGaucheX = 10; //Rive gauche axe X

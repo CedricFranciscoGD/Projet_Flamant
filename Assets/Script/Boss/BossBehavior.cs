@@ -8,21 +8,21 @@ using Random=UnityEngine.Random;
 public class BossBehavior : MonoBehaviour
 {
     //Moving
-    [SerializeField] private float m_speedEnemy;
-    [SerializeField] private float m_forwardEnemy;
+    [SerializeField] private float m_speedEnemy;//enemy speed for left and right
+    [SerializeField] private float m_forwardEnemy;//enemy speed forwaard
     
     //Limits
-    [SerializeField] private float m_leftBand;
-    [SerializeField] private float m_rightBand;
+    [SerializeField] private float m_leftBand;//left border limit
+    [SerializeField] private float m_rightBand;//right border limit
     
     //Behavior
-    [SerializeField] private bool m_inFight = true;
-    private bool m_leftOrRight = true;
-    [SerializeField] private float m_movmentSpeed;
-    private float m_randomMove;
-    [SerializeField] private float m_minMove;
-    [SerializeField] private float m_maxMove;
+    [SerializeField] private bool m_inFight = true;//bool for fight mode
+    [SerializeField] private float m_movementSpeed;//left and right move frequency
+    [SerializeField] private float m_minMove;//random min border for unpredictable move
+    [SerializeField] private float m_maxMove;//random max border for unpredictable move
     private bool m_moveIsDone = true;
+    private float m_randomMove;
+    private bool m_leftOrRight = true;//bool for alternating moves
     
     
     //Update is called once per frame
@@ -31,29 +31,32 @@ public class BossBehavior : MonoBehaviour
         //behavior
         if (m_inFight)
         {
+            //basic forward move
             transform.Translate(Vector3.left * m_forwardEnemy * Time.deltaTime);
-
+            
+            //randomize move range
             if (m_moveIsDone == true)
             {
-                m_randomMove = Random.Range(m_minMove, m_maxMove);
+                m_randomMove = Random.Range(m_minMove, m_maxMove);//nouveau tirage de longueur de deplacement lateral
                 //Debug.Log(m_randomMove);
-                m_moveIsDone = false;
+                m_moveIsDone = false;//bool to grant next move
             }
+            //move to..
             else
             {
                 if (m_moveIsDone == false)
                 {
-                    if (m_leftOrRight)
+                    if (m_leftOrRight)//...left
                     {
                         transform.Translate(Vector3.up * m_speedEnemy * Time.deltaTime);
-                        m_randomMove -= m_movmentSpeed;
+                        m_randomMove -= m_movementSpeed;
                     }
-                    else
+                    else//...right
                     {
                         transform.Translate(Vector3.down * m_speedEnemy * Time.deltaTime);
-                        m_randomMove -= m_movmentSpeed;
+                        m_randomMove -= m_movementSpeed;
                     }
-
+                    //randomize move range trigger
                     if (m_randomMove < 0)
                     {
                         m_moveIsDone = true;
@@ -64,12 +67,12 @@ public class BossBehavior : MonoBehaviour
         }
 
         // delimite la taille des déplacements
-        if(transform.position.x > m_leftBand)
+        if(transform.position.x > m_leftBand)//left
         {
             transform.position = new Vector3(m_leftBand, transform.position.y, transform.position.z);
         }
 
-        if(transform.position.x < m_rightBand)
+        if(transform.position.x < m_rightBand)//droite
         {
             transform.position = new Vector3(m_rightBand, transform.position.y, transform.position.z);
         }

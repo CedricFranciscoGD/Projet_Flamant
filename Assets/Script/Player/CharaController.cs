@@ -4,14 +4,9 @@ using UnityEngine;
 
 public class CharaController : MonoBehaviour
 {
-    [SerializeField]
-    private float m_speed;
-
-    [SerializeField]
-    private float m_leftBand;
-
-    [SerializeField]
-    private float m_rightBand;
+    [SerializeField] private float m_speed;//character speed
+    [SerializeField] private float m_leftBand;//left border limit
+    [SerializeField] private float m_rightBand;//right border limit
     
 
     // Update is called once per frame
@@ -26,11 +21,13 @@ public class CharaController : MonoBehaviour
         transform.Translate(Vector3.back * m_speed * Time.deltaTime);
 
         // delimite la taille des déplacements
-        if(transform.position.x > m_leftBand){
+        if(transform.position.x > m_leftBand)//left
+        {
             transform.position = new Vector3(m_leftBand, transform.position.y, transform.position.z);
         }
 
-        if(transform.position.x < m_rightBand){
+        if(transform.position.x < m_rightBand)//right
+        {
             transform.position = new Vector3(m_rightBand, transform.position.y, transform.position.z);
         }
     }

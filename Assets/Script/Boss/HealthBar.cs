@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class HealthBar : MonoBehaviour
 {
-    public float m_bossHP;
-    public float m_damageAmmo;
-    public Slider m_slider;
+    public float m_bossHP;//boss HP pool
+    public float m_damageAmmo;//boss ammo damage to player
+    public Slider m_slider;//slider for health in UI
     
     public void SetHealth(float m_bossHP)
     {

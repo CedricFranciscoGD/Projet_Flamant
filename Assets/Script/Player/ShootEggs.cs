@@ -6,17 +6,14 @@ using UnityEngine.UI;
 public class ShootEggs : MonoBehaviour
 {
     
-    [SerializeField] private GameObject m_ammo;
-    
-    [SerializeField] private Vector3 m_popOffset = Vector3.up;
+    [SerializeField] private GameObject m_ammo;//gameobject prefab
+    [SerializeField] private Vector3 m_popOffset = Vector3.up;//offset player shoot ammo setting
 
-    [SerializeField] private float m_ammoRemain;
-    [SerializeField] private float m_ammoCapacity;
+    [SerializeField] private float m_ammoRemain;//remaining ammos 
+    [SerializeField] private float m_ammoCapacity;//max player ammo capacity
 
-    public Text m_ammoDisplay;
-    
-    
-    
+    public Text m_ammoDisplay;//UI
+
     // Start is called before the first frame update
     void Start()
     {
