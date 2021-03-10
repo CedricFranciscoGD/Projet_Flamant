@@ -38,7 +38,12 @@ public class PlantsSpawn : MonoBehaviour
     private int m_pickWaterPlant;//var to stock the random pick in water prefabs
 
     // Update is called once per frame
-    void Update()
+    void Start()
+    {
+        StartCoroutine(SpawningPlants());
+    }
+
+    IEnumerator SpawningPlants()
     {
         while (m_countInstances < m_maxInstances)
         {
@@ -47,7 +52,9 @@ public class PlantsSpawn : MonoBehaviour
             GenerateGroundPlant();//ground plant spawns
             IncrementSpawnZ();//Z positions spawn increment
         }
+        yield return new WaitForSeconds(0.1f);
     }
+    
     //water plants pop function
     void GenerateWaterPlant()
     {

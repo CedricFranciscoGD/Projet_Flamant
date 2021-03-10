@@ -22,13 +22,19 @@ public class SpawnCollectible : MonoBehaviour
     private int m_countInstances = 0;//instantiate count
     
     // Update is called once per frame
-    void Update()
+    void Start()
+    {
+        StartCoroutine(SpawningCollectibles());
+    }
+
+    IEnumerator SpawningCollectibles()
     {
         while (m_countInstances < m_maxInstances)
         {
             GenerateCollectible();//spawn function
             m_countInstances++;
         }
+        yield return new WaitForSeconds(0.1f);
     }
 
     //spawn function

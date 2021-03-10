@@ -22,7 +22,12 @@ public class EnemynotmovingSpawn : MonoBehaviour
     private int m_countInstances = 0;//instantiate count
     
     // Update is called once per frame
-    void Update()
+    void Start()
+    {
+        StartCoroutine(SpawningEnemies());
+    }
+
+    IEnumerator SpawningEnemies()
     {
         //Itérations spawner
         while (m_countInstances < m_maxInstances)
@@ -30,6 +35,7 @@ public class EnemynotmovingSpawn : MonoBehaviour
             GenerateEnemy();//Spawn Function
             m_countInstances++;
         }
+        yield return new WaitForSeconds(0.1f);
     }
 
     void GenerateEnemy()

@@ -26,7 +26,12 @@ public class SpawnTrees : MonoBehaviour
     private int m_pickTree;//stock var to pick a random prefab
     
     // Update is called once per frame
-    void Update()
+    void Start()
+    {
+        StartCoroutine(SpawningTrees());
+    }
+
+    IEnumerator SpawningTrees()
     {
         while (m_countInstances < m_maxInstances)
         {
@@ -34,6 +39,7 @@ public class SpawnTrees : MonoBehaviour
             GenerateTree();//spawn function
             m_countInstances++;
         }
+        yield return new WaitForSeconds(0.1f);
     }
 
     //spawn tree function

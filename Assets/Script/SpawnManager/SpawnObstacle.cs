@@ -27,7 +27,12 @@ public class SpawnObstacle : MonoBehaviour
     private int m_pickRock = 0;//stock var for pick rocks
     
     // Update is called once per frame
-    void Update()
+    void Start()
+    {
+        StartCoroutine(SpawningRocks());
+    }
+
+    IEnumerator SpawningRocks()
     {
         while (m_countInstances < m_maxInstances)
         {
@@ -35,6 +40,7 @@ public class SpawnObstacle : MonoBehaviour
             GenerateObstacle();//spawn function
             m_countInstances++;
         }
+        yield return new WaitForSeconds(0.1f);
     }
 
     //spawn function

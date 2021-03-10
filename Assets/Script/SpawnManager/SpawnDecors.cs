@@ -24,7 +24,12 @@ public class SpawnDecors : MonoBehaviour
     private int m_countInstances = 0; //Compteur d'itérations
     
     // Update is called once per frame
-    void Update()
+    void Start()
+    {
+        StartCoroutine(SpawningDecors());
+    }
+
+    IEnumerator SpawningDecors()
     {
         //Itérations spawner
         while (m_countInstances < m_maxInstances)
@@ -32,6 +37,7 @@ public class SpawnDecors : MonoBehaviour
             GenerateDecors();//Spawn Function
             m_countInstances++;
         }
+        yield return new WaitForSeconds(0.1f);
     }
 
     void GenerateDecors()
