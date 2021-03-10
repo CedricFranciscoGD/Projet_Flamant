@@ -54,16 +54,10 @@ public class SpawnEnemy : MonoBehaviour
     //kill on collide to avoid overlapping objects in scene
     private void OnTriggerEnter(Collider p_other)
     {
-        if (p_other.CompareTag("Enemy"))
+        if (p_other.TryGetComponent(out Collider p_else))
         {
             Destroy(gameObject);
-            Debug.Log("Spawnkill(EnemyOverlap)");
-        }
-        
-        if (p_other.CompareTag("Danger"))
-        {
-            Destroy(gameObject);
-            Debug.Log("Spawnkill(ObstacleOverlap)");
+            Debug.Log("Overlap, gameobject destroyed");
         }
     }
 }

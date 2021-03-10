@@ -46,7 +46,11 @@ public class SpawnCollectible : MonoBehaviour
     //collide to avoid overlapping in scene
     private void OnTriggerEnter(Collider p_other)
     {
-        Destroy(gameObject);
+        if (p_other.TryGetComponent(out Collider p_else))
+        {
+            Destroy(gameObject);
+            Debug.Log("Overlap, gameobject destroyed");
+        }
     }
 
     //z axis increment spawn function

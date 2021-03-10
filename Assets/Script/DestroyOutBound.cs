@@ -4,22 +4,16 @@ using UnityEngine;
 
 public class DestroyOutBound : MonoBehaviour
 {
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider p_other)
     {
-        if (other.CompareTag("Danger"))
+        if (p_other.TryGetComponent(out Transform p_else))
         {
-            Destroy(other.gameObject);
-        }
-
-        else if (other.CompareTag("Enemy"))
-        {
-            Destroy(other.gameObject);
+            Destroy(p_other.gameObject);
         }
         
-        else if (other.CompareTag("Bonus"))
+        if (p_other.TryGetComponent(out MeshRenderer p_else1))
         {
-            Destroy(other.gameObject);
+            Destroy(p_other.gameObject);
         }
-
     }
 }

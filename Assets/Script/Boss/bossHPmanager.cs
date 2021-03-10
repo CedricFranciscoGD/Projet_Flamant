@@ -21,9 +21,9 @@ public class bossHPmanager : MonoBehaviour
     //If boss get hit from player ammos 
     //Lose hp 
     //If Boss HP = 0 boss die and launch win fonction
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider p_other)
     {
-        if (other.CompareTag("PlayerShoot"))
+        if (p_other.CompareTag("PlayerShoot"))
         {
                 m_bossHP -= m_damageAmmo;
                 Debug.Log(message:"AmmoHit");

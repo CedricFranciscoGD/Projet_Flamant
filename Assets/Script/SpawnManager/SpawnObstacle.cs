@@ -60,16 +60,19 @@ public class SpawnObstacle : MonoBehaviour
         }
         IncrementSpawnZ();//z axis spawn increment function
     }
-    
-    //kill on collide to avoir overlapping in scene
-    private void OnTriggerEnter(Collider p_other)
-    {
-        Destroy(gameObject);
-    }
 
     //z axis spawn increment function
     void IncrementSpawnZ()
     {
         m_spawnPosZ -= Random.Range(m_spawnSpeedMin, m_spawnSpeedMax);
+    }
+    
+    private void OnTriggerEnter(Collider p_other)
+    {
+        if (p_other.TryGetComponent(out Collider p_else))
+        {
+            Destroy(gameObject);
+            Debug.Log("Overlap, gameobject destroyed");
+        }
     }
 }

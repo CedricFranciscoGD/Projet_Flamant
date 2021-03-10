@@ -15,19 +15,18 @@ public class CollideRetry : MonoBehaviour
     /// Si le joueur rentre en contact avec un danger, la fonction "EndGame" du GameManager est lancée
     /// </summary>
     /// <param name="other"></param>
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider p_other)
     {
-        if (other.CompareTag("Danger"))
+        if (p_other.CompareTag("Danger"))
         {
             //Debug.Log(message:"Danger");
             SceneManager.LoadScene("Game_Over_Menu");
         }
         
-        else if (other.CompareTag("Enemy"))
+        else if (p_other.CompareTag("Enemy"))
         {
             //Debug.Log(message:"Enemy");
             SceneManager.LoadScene("Game_Over_Menu");
         }
-        
     }
 }

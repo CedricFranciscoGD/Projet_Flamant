@@ -86,6 +86,10 @@ public class PlantsSpawn : MonoBehaviour
     //kill on collide to avoid overlaping in scene
     private void OnTriggerEnter(Collider p_other)
     {
-        Destroy(gameObject);
+        if (p_other.TryGetComponent(out Collider p_else))
+        {
+            Destroy(gameObject);
+            Debug.Log("Overlap, gameobject destroyed");
+        }
     }
 }
