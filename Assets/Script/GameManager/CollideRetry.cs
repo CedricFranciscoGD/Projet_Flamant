@@ -18,6 +18,9 @@ public class CollideRetry : MonoBehaviour
 
     public bool isDead = false;
 
+    private float m_angle = 180;
+    
+
 
     private void Update()
     {
@@ -44,12 +47,20 @@ public class CollideRetry : MonoBehaviour
             playerDead.Play();
             //Debug.Log(message:"Danger");
             isDead = true;
+            DeadPos();
         }
         
         else if (p_other.CompareTag("Enemy"))
         {
             playerDead.Play();
             isDead = true;
+            DeadPos();
         }
+    }
+
+    private void DeadPos()
+    {
+        transform.Rotate(Vector3.back* m_angle);
+        transform.Translate(0,-1,0);
     }
 }

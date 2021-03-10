@@ -20,6 +20,10 @@ public class LateralMovement : MonoBehaviour
     //range setting for a random move lentgh
     [SerializeField] private float m_minMoveRange;
     [SerializeField] private float m_maxMoveRange;
+    
+    private float m_leftDir = 5f;
+    private float m_rightDir = 10f;
+    private float m_angle = 0.1f;
 
     private void Start()
     {
@@ -36,12 +40,15 @@ public class LateralMovement : MonoBehaviour
         if (m_loopMovement > 0 && m_loopMovement < 2)
         {
             transform.Translate(Vector3.right * m_speedEnemy * Time.deltaTime);
+            transform.Rotate(Vector3.up * m_leftDir * Time.deltaTime);
             //print(m_loopMovement);
         }
         //conditions de mouvement vers la gauche
         else if (m_loopMovement >= 2 && m_loopMovement < 4)
         {
             transform.Translate(Vector3.left * m_speedEnemy * Time.deltaTime);
+            transform.Rotate(Vector3.up * m_angle);
+            transform.Rotate(Vector3.up * m_leftDir * Time.deltaTime);
             //print(m_loopMovement);
         }
         //reset movement set
