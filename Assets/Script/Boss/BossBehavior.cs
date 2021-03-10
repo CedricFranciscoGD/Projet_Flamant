@@ -16,7 +16,7 @@ public class BossBehavior : MonoBehaviour
     [SerializeField] private float m_rightBand;//right border limit
     
     //Behavior
-    [SerializeField] private bool m_inFight = true;//bool for fight mode
+    [SerializeField] public bool m_inFight = true;//bool for fight mode
     [SerializeField] private float m_movementSpeed;//left and right move frequency
     [SerializeField] private float m_minMove;//random min border for unpredictable move
     [SerializeField] private float m_maxMove;//random max border for unpredictable move
