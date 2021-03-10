@@ -56,7 +56,7 @@ public class SpawnEnemy : MonoBehaviour
     {
         if (p_other.TryGetComponent(out Collider p_else))
         {
-            Destroy(gameObject);
+            Destroy(p_other.gameObject);
             Debug.Log("Overlap, gameobject destroyed");
         }
     }
