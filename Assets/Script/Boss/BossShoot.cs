@@ -12,6 +12,8 @@ public class BossShoot : MonoBehaviour
     [SerializeField] private float m_time;//time var
     [SerializeField] public float m_trigger;//shoot frequency
 
+    public AudioSource BossShootSound;
+
     void Update()
     {
         //Timing increment
@@ -29,6 +31,7 @@ public class BossShoot : MonoBehaviour
     {
         //instantiate
         Instantiate(m_bossAmmo, transform.position + m_popOffset, m_bossAmmo.transform.rotation);
+        BossShootSound.Play();
     }
 }
 

@@ -14,6 +14,8 @@ public class ShootEggs : MonoBehaviour
 
     public Text m_ammoDisplay;//UI
 
+    public AudioSource Shoot;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +39,7 @@ public class ShootEggs : MonoBehaviour
             {
                 Instantiate(m_ammo, transform.position + m_popOffset, m_ammo.transform.rotation);
                 m_ammoRemain -= 1;
+                PlayShoot();
             }
         }
 
@@ -70,5 +73,10 @@ public class ShootEggs : MonoBehaviour
             //Debug.Log(message:"Full !");
         }
         
+    }
+
+    public void PlayShoot()
+    {
+        Shoot.Play();
     }
 }

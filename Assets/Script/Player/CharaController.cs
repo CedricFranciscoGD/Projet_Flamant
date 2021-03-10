@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,7 +8,15 @@ public class CharaController : MonoBehaviour
     [SerializeField] private float m_speed;//character speed
     [SerializeField] private float m_leftBand;//left border limit
     [SerializeField] private float m_rightBand;//right border limit
+
+    public bool playerIsDead;
     
+
+    private void Start()
+    {
+        playerIsDead = GetComponent<CollideRetry>().isDead;
+    }
+
 
     // Update is called once per frame
     void Update()
@@ -29,6 +38,11 @@ public class CharaController : MonoBehaviour
         if(transform.position.x < m_rightBand)//right
         {
             transform.position = new Vector3(m_rightBand, transform.position.y, transform.position.z);
+        }
+
+        if (playerIsDead)
+        {
+            m_speed = 0;
         }
     }
 }

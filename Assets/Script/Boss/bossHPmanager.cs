@@ -9,6 +9,8 @@ public class bossHPmanager : MonoBehaviour
     //vars
     [SerializeField] public float m_bossHP;
     [SerializeField] public float m_damageAmmo;
+
+    public AudioSource BossTouched;
     
     //* Update is called once per frame
     
@@ -25,6 +27,7 @@ public class bossHPmanager : MonoBehaviour
     {
         if (p_other.CompareTag("PlayerShoot"))
         {
+                PlayBossTouched();
                 m_bossHP -= m_damageAmmo;
                 Debug.Log(message:"AmmoHit");
                 Debug.Log(m_bossHP);
@@ -34,6 +37,11 @@ public class bossHPmanager : MonoBehaviour
         {
                 KillBoss();
         }
+    }
+
+    public void PlayBossTouched()
+    {
+        BossTouched.Play();
     }
 
     //win function for boss kill
