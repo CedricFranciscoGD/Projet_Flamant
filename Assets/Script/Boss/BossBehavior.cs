@@ -24,7 +24,11 @@ public class BossBehavior : MonoBehaviour
     private float m_randomMove;
     private bool m_leftOrRight = true;//bool for alternating moves
     
-    
+    [SerializeField] private GameObject m_player;
+    [SerializeField] private GameObject m_boss;
+    [SerializeField] private float m_fromPlayerOffset;
+    private float m_posZ;
+
     //Update is called once per frame
     void Update()
     {
@@ -32,7 +36,12 @@ public class BossBehavior : MonoBehaviour
         if (m_inFight)
         {
             //basic forward move
-            transform.Translate(Vector3.left * m_forwardEnemy * Time.deltaTime);
+            m_posZ = (Math.Abs(m_player.transform.position.z) + Math.Abs(m_fromPlayerOffset))*-1;
+            m_boss.transform.position = new Vector3(transform.position.x, transform.position.y, m_posZ);
+            
+            Debug.Log("BOSS "+ m_posZ);
+            
+            //transform.Translate(Vector3.left * m_forwardEnemy * Time.deltaTime);
             
             //randomize move range
             if (m_moveIsDone == true)
