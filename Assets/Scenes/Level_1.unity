@@ -280,8 +280,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04c7433e06644f44bb61c3f9bc31b3ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_player: {fileID: 0}
-  m_sensor: {fileID: 0}
+  m_player: {fileID: 9091579517835193475}
+  m_sensor: {fileID: 189267258}
   m_fromPlayerOffset: 0
 --- !u!65 &189267260
 BoxCollider:
