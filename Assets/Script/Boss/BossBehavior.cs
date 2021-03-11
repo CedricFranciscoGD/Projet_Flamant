@@ -9,8 +9,7 @@ public class BossBehavior : MonoBehaviour
 {
     //Moving
     [SerializeField] private float m_speedEnemy;//enemy speed for left and right
-    [SerializeField] private float m_forwardEnemy;//enemy speed forwaard
-    
+
     //Limits
     [SerializeField] private float m_leftBand;//left border limit
     [SerializeField] private float m_rightBand;//right border limit
