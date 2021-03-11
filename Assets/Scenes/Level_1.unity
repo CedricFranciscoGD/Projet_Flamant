@@ -2351,7 +2351,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_bossHP: 100
-  m_damageAmmo: 20
+  m_damageAmmo: 7
   BossTouched: {fileID: 1065484106}
 --- !u!114 &1576888575007793589
 MonoBehaviour:
@@ -2384,7 +2384,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_bossHP: 100
-  m_damageAmmo: 20
+  m_damageAmmo: 7
   m_slider: {fileID: 320021537}
 --- !u!1001 &1952151703675652865
 PrefabInstance:
@@ -2448,6 +2448,11 @@ PrefabInstance:
       propertyPath: playerDead
       value: 
       objectReference: {fileID: 32288724}
+    - target: {fileID: 7294891070604339076, guid: cd88c4441dfc6d74c9e1e1f3ef1b3249,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7294891070604339077, guid: cd88c4441dfc6d74c9e1e1f3ef1b3249,
         type: 3}
       propertyPath: m_increaseSpeed
@@ -2457,6 +2462,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_countMax
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7294891070604339077, guid: cd88c4441dfc6d74c9e1e1f3ef1b3249,
+        type: 3}
+      propertyPath: m_delay
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7294891070604339077, guid: cd88c4441dfc6d74c9e1e1f3ef1b3249,
+        type: 3}
+      propertyPath: playerDead
+      value: 
+      objectReference: {fileID: 32288724}
+    - target: {fileID: 7294891070604339077, guid: cd88c4441dfc6d74c9e1e1f3ef1b3249,
+        type: 3}
+      propertyPath: m_xPos
+      value: 7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7294891070604339077, guid: cd88c4441dfc6d74c9e1e1f3ef1b3249,
+        type: 3}
+      propertyPath: m_yPos
+      value: 5.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 7294891070604339077, guid: cd88c4441dfc6d74c9e1e1f3ef1b3249,
+        type: 3}
+      propertyPath: m_zPos
+      value: 28.69
       objectReference: {fileID: 0}
     - target: {fileID: 7294891070604339078, guid: cd88c4441dfc6d74c9e1e1f3ef1b3249,
         type: 3}
@@ -2558,7 +2588,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7294891070604339076, guid: cd88c4441dfc6d74c9e1e1f3ef1b3249, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: cd88c4441dfc6d74c9e1e1f3ef1b3249, type: 3}
 --- !u!1001 &2780527533735417921
 PrefabInstance:

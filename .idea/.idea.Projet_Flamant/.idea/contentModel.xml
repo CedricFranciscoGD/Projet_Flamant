@@ -29,7 +29,6 @@
           </e>
           <e p="DestroyOutBound.cs" t="Include" />
           <e p="GameManager" t="Include">
-            <e p="CollideRetry.cs" t="Include" />
             <e p="DestroyEnemy.cs" t="Include" />
             <e p="GameManager.cs" t="Include" />
           </e>
