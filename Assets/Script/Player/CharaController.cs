@@ -80,7 +80,10 @@ public class CharaController : MonoBehaviour
             {
                 SpeedIncrease();
             }
-            
+            else
+            {
+                Debug.Log("MaxSpeedReached");
+            }
         }
     }
 
@@ -88,18 +91,6 @@ public class CharaController : MonoBehaviour
     {
         m_speed = m_speed * m_increaseSpeed;
         m_countMax = m_countMax + m_countMaxAdd;
-    }
-
-    public void LeftMove()
-    {
-        Debug.Log("LEFT");
-        transform.Translate(Vector3.right * m_speed * 10 * Time.deltaTime);
-    }
-    
-    public void RightMove()
-    {
-        Debug.Log("Right");
-        transform.Translate(Vector3.left * m_speed * 10 * Time.deltaTime);
     }
 
     /// <summary>
