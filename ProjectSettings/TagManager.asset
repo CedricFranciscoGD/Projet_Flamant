@@ -10,8 +10,6 @@ TagManager:
   - Sensor
   - Boss
   - PlayerShoot
-  - Tree
-  - Particule
   layers:
   - Default
   - TransparentFX
