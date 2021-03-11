@@ -35,11 +35,11 @@ public class BossBehavior : MonoBehaviour
         //behavior
         if (m_inFight)
         {
-            //basic forward move
+            //forward move based on player position
             m_posZ = (Math.Abs(m_player.transform.position.z) + Math.Abs(m_fromPlayerOffset))*-1;
             m_boss.transform.position = new Vector3(transform.position.x, transform.position.y, m_posZ);
             
-            Debug.Log("BOSS "+ m_posZ);
+            //Debug.Log("BOSS "+ m_posZ);
             
             //transform.Translate(Vector3.left * m_forwardEnemy * Time.deltaTime);
             

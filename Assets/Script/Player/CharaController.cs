@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class CharaController : MonoBehaviour
 {
-    [SerializeField] private float m_speed; //character speed
+    [SerializeField] public float m_speed; //character speed
     [SerializeField] private float m_leftBand; //left border limit
     [SerializeField] private float m_rightBand; //right border limit
 
