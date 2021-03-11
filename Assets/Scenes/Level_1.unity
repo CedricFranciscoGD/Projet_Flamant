@@ -6365,7 +6365,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa33e6843631dcb46ade2764ee5a2a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_enemy: {fileID: 2486331064353786831, guid: d99dc5fb0b77be948b4a1862c26262c6, type: 3}
+  m_enemy: {fileID: 2709667080912823361, guid: 8a4ecea91c7d99442bc4c05274c61f11, type: 3}
   m_maxSpawnX: 18
   m_minSpawnX: -3
   m_spawnHeight: 4.5
