@@ -248,80 +248,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1 &159874593
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 159874595}
-  - component: {fileID: 159874594}
-  - component: {fileID: 159874596}
-  m_Layer: 0
-  m_Name: InputManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &159874594
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 159874593}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eefe7986b38ad3745af773700e022310, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_speed: 0
-  m_leftBand: 0
-  m_rightBand: 0
-  playerIsDead: 0
-  m_countMax: 115
-  m_countMaxAdd: 100
-  m_countDistance: 0
-  m_increaseSpeed: 1.1
-  m_posZ: 0
-  m_maxSpeed: 0
-  m_xPos: 0
-  m_yPos: 0
-  m_zPos: 0
-  m_elapsedTime: 0
-  m_delay: 0
-  isDead: 0
-  playerDead: {fileID: 0}
---- !u!4 &159874595
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 159874593}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -238.41751, y: 207.8398, z: -213.07727}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &159874596
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 159874593}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff1c5977d055efb4d96ffc3f5b73ce33, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_player: {fileID: 9091579517835193475}
 --- !u!1 &189267258
 GameObject:
   m_ObjectHideFlags: 0
@@ -7361,6 +7287,7 @@ GameObject:
   - component: {fileID: 1877815460}
   - component: {fileID: 1877815459}
   - component: {fileID: 1877815458}
+  - component: {fileID: 1877815461}
   m_Layer: 5
   m_Name: LEFT
   m_TagString: Untagged
@@ -7430,18 +7357,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1877815459}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 9091579517835193476}
-        m_MethodName: LeftMove
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1877815459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7479,6 +7395,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1877815456}
   m_CullTransparentMesh: 0
+--- !u!114 &1877815461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877815456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 9091579517835193476}
+          m_MethodName: LeftMove
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1961900556
 GameObject:
   m_ObjectHideFlags: 0
