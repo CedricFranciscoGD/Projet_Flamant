@@ -282,7 +282,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_player: {fileID: 9091579517835193475}
   m_sensor: {fileID: 189267258}
-  m_fromPlayerOffset: 0
+  m_fromPlayerOffset: 90
 --- !u!65 &189267260
 BoxCollider:
   m_ObjectHideFlags: 0
