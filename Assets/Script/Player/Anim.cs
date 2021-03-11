@@ -10,7 +10,7 @@ public class Anim : MonoBehaviour
     [SerializeField] private float m_highPos; //Time request to launch game over state
     [SerializeField] private bool m_isUp = true; 
 
-    private float m_angle = 1;
+    [SerializeField] private float m_angle = 1;
     
     private void Update()
     {
