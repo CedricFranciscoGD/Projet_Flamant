@@ -68,6 +68,14 @@ public class ShootEggs : MonoBehaviour
             }
         }
 
+        if (m_ammoRemain < m_ammoCapacity)
+        {
+            if (p_other.CompareTag("Particule"))
+            {
+                Destroy(p_other.gameObject);
+            }
+        }
+
         else
         {
             //Debug.Log(message:"Full !");
