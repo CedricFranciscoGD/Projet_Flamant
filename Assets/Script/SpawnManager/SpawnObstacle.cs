@@ -26,10 +26,27 @@ public class SpawnObstacle : MonoBehaviour
     private int m_countInstances = 0;//instantiate count
     private int m_pickRock = 0;//stock var for pick rocks
     
+    private GameObject m_player;
+    private float m_playerZPosition;
+    [SerializeField] private int m_distanceRespawnTrigger = 50;//max prefab per pop
+    
     // Update is called once per frame
     void Start()
     {
         StartCoroutine(SpawningRocks());
+        m_player = GameObject.Find("PlayerFlamand");
+    }
+    
+    private void Update()
+    {
+        if (m_player.TryGetComponent(out CharaController p_player))
+        {
+            m_playerZPosition = p_player.m_posZ;
+            if (Math.Abs(m_playerZPosition) > Math.Abs(m_spawnPosZ) - Math.Abs(m_distanceRespawnTrigger))
+            {
+                StartCoroutine(SpawningRocks());
+            }
+        }
     }
 
     IEnumerator SpawningRocks()

@@ -16,7 +16,8 @@ public class CharaController : MonoBehaviour
     [SerializeField] private float m_countMaxAdd = 100;
     [SerializeField] private float m_countDistance = 0;
     [SerializeField] private float m_increaseSpeed = 1.1f;
-    [SerializeField] private float m_posZ;
+    [SerializeField] public float m_posZ;
+    [SerializeField] public float m_maxSpeed;
     
     [SerializeField] private float m_xPos;//position axe X
     [SerializeField] private float m_yPos;//position axe Y
@@ -37,7 +38,7 @@ public class CharaController : MonoBehaviour
     void Update()
     {
         m_posZ = transform.position.z;
-        Debug.Log("Player " + m_posZ);
+        //Debug.Log("Player " + m_posZ);
 
         if (!isDead)
         {
@@ -76,7 +77,11 @@ public class CharaController : MonoBehaviour
         m_countDistance = Math.Abs(transform.position.z);
         if (m_countDistance > m_countMax)
         {
-            SpeedIncrease();
+            if (m_speed < m_maxSpeed)
+            {
+                SpeedIncrease();
+                Debug.Log("MaxSpeedReached");
+            }
         }
     }
 

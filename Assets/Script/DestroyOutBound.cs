@@ -16,7 +16,7 @@ public class DestroyOutBound : MonoBehaviour
         m_posZ = m_player.transform.position.z + Math.Abs(m_fromPlayerOffset);
         m_sensor.transform.position = new Vector3(transform.position.x, transform.position.y, m_posZ);
         
-        Debug.Log("Sensor "+ m_posZ);
+        //Debug.Log("Sensor "+ m_posZ);
     }
 
     private void OnTriggerEnter(Collider p_other)

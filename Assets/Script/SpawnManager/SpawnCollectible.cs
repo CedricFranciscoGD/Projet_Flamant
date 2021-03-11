@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class SpawnCollectible : MonoBehaviour
 {
@@ -21,10 +23,27 @@ public class SpawnCollectible : MonoBehaviour
     [SerializeField] private int m_maxInstances = 50;//instantiate max limit
     private int m_countInstances = 0;//instantiate count
     
+    private GameObject m_player;
+    private float m_playerZPosition;
+    [SerializeField] private int m_distanceRespawnTrigger = 50;//max prefab per pop
+    
     // Update is called once per frame
     void Start()
     {
         StartCoroutine(SpawningCollectibles());
+        m_player = GameObject.Find("PlayerFlamand");
+    }
+    
+    private void Update()
+    {
+        if (m_player.TryGetComponent(out CharaController p_player))
+        {
+            m_playerZPosition = p_player.m_posZ;
+            if (Math.Abs(m_playerZPosition) > Math.Abs(m_spawnPosZ) - Math.Abs(m_distanceRespawnTrigger))
+            {
+                StartCoroutine(SpawningCollectibles());
+            }
+        }
     }
 
     IEnumerator SpawningCollectibles()

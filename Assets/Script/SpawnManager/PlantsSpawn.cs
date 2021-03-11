@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class PlantsSpawn : MonoBehaviour
 {
@@ -36,11 +38,28 @@ public class PlantsSpawn : MonoBehaviour
     [SerializeField] private int m_maxInstances = 50;//max instantiates to limit pop
     private int m_countInstances = 0;//instantiate count
     private int m_pickWaterPlant;//var to stock the random pick in water prefabs
+    
+    private GameObject m_player;
+    private float m_playerZPosition;
+    [SerializeField] private int m_distanceRespawnTrigger = 50;//max prefab per pop
 
     // Update is called once per frame
     void Start()
     {
         StartCoroutine(SpawningPlants());
+        m_player = GameObject.Find("PlayerFlamand");
+    }
+    
+    private void Update()
+    {
+        if (m_player.TryGetComponent(out CharaController p_player))
+        {
+            m_playerZPosition = p_player.m_posZ;
+            if (Math.Abs(m_playerZPosition) > Math.Abs(m_spawnWaterPosZ) - Math.Abs(m_distanceRespawnTrigger))
+            {
+                StartCoroutine(SpawningPlants());
+            }
+        }
     }
 
     IEnumerator SpawningPlants()
