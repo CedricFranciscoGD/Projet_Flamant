@@ -16,6 +16,7 @@
         <e p="Script" t="Include">
           <e p="BasicBehaviors" t="Include">
             <e p="AmmoMove.cs" t="Include" />
+            <e p="AnimCroco.cs" t="Include" />
             <e p="LateralMovement.cs" t="Include" />
             <e p="RotatingBehaviour.cs" t="Include" />
           </e>
