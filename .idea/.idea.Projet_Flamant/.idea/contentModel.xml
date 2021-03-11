@@ -17,6 +17,8 @@
           <e p="BasicBehaviors" t="Include">
             <e p="AmmoMove.cs" t="Include" />
             <e p="LateralMovement.cs" t="Include" />
+            <e p="ParticleSystem.cs" t="Include" />
+            <e p="RotatingBehaviour.cs" t="Include" />
           </e>
           <e p="Boss" t="Include">
             <e p="BossBehavior.cs" t="Include" />
