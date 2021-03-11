@@ -59,7 +59,6 @@ public class CharaController : MonoBehaviour
             {
                 SceneManager.LoadScene("Game_Over_Menu");
             }
-
         }
 
         // delimite la taille des déplacements
@@ -80,6 +79,9 @@ public class CharaController : MonoBehaviour
             if (m_speed < m_maxSpeed)
             {
                 SpeedIncrease();
+            }
+            else
+            {
                 Debug.Log("MaxSpeedReached");
             }
         }
