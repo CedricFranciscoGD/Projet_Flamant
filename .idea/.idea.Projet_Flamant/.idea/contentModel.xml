@@ -32,6 +32,8 @@
           <e p="GameManager" t="Include">
             <e p="DestroyEnemy.cs" t="Include" />
             <e p="GameManager.cs" t="Include" />
+            <e p="GameOverTheme.cs" t="Include" />
+            <e p="VictoryTheme.cs" t="Include" />
           </e>
           <e p="MenuControl.cs" t="Include" />
           <e p="Player" t="Include">
