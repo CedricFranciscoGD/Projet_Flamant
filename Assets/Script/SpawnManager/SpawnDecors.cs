@@ -7,12 +7,15 @@ public class SpawnDecors : MonoBehaviour
 {
     //GameObjects
     [SerializeField] GameObject m_decors;//rives droite et gauches
+    [SerializeField] GameObject m_water;//Rivière
 
     //Spawn Settings
     [SerializeField] private float m_riveGaucheX = 10; //Rive gauche axe X
     [SerializeField] private float m_riveDroiteX = 1; //Rive droite axe X
     [SerializeField] private float m_spawnHeight = 10; //Tous les éléments axe Z
+    
     [SerializeField] private float m_waterSpawnX = 10; //Eau axe X
+    [SerializeField] private float m_waterSpawnY = 10; //Eau axe y
     
     [SerializeField] private float m_riveSpawnPosZ; //Incrementation Rive axe Z
     [SerializeField] private float m_waterSpawnPosZ; //Incrementation Eau axe Z
@@ -62,6 +65,7 @@ public class SpawnDecors : MonoBehaviour
         //Instantiate rive gauche/droite/Eau
         Instantiate(m_decors, new Vector3(m_riveGaucheX, m_spawnHeight, m_riveSpawnPosZ),m_decors.transform.rotation); //Gauche
         Instantiate(m_decors, new Vector3(m_riveDroiteX, m_spawnHeight, m_riveSpawnPosZ),m_decors.transform.rotation); //Droite
+        Instantiate(m_water, new Vector3(m_waterSpawnX, m_waterSpawnY, m_waterSpawnPosZ),m_water.transform.rotation); //Rivière
         IncrementSpawnZ(); //Axe Z spawn function
     }
 

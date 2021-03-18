@@ -371,7 +371,7 @@ Transform:
   - {fileID: 962215402}
   - {fileID: 32288723}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &292398951 stripped
 GameObject:
@@ -6409,14 +6409,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_decors: {fileID: 1502502497072985537, guid: 99f5f269d345d734190e3afd80192f2c,
     type: 3}
+  m_water: {fileID: 4493173357433891982, guid: 4f550e5fd269eda4dbb3cd805b35cdfb, type: 3}
   m_riveGaucheX: 39
   m_riveDroiteX: -25
   m_spawnHeight: 4.5
   m_waterSpawnX: 7.9
+  m_waterSpawnY: 4
   m_riveSpawnPosZ: 50
   m_waterSpawnPosZ: 50
   m_riveLenghtX: 43
-  m_waterLenghtX: 30
+  m_waterLenghtX: 39.5
   m_maxInstances: 500
   m_distanceRespawnTrigger: 50
 --- !u!114 &981992593
@@ -7018,7 +7020,7 @@ Transform:
   m_LocalScale: {x: 6596.931, y: 97.15236, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 90.045006}
 --- !u!1 &1572278537
 GameObject:
@@ -7423,85 +7425,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!1 &1961900556
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1961900559}
-  - component: {fileID: 1961900558}
-  - component: {fileID: 1961900557}
-  m_Layer: 0
-  m_Name: WaterLowPoly
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!23 &1961900557
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1961900556}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 8538bd626cb3e80478f62e319f75e337, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &1961900558
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1961900556}
-  m_Mesh: {fileID: 4300000, guid: ebfb4988eb16add4784122504f75fe2f, type: 2}
---- !u!4 &1961900559
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1961900556}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 23.4, y: 4.42, z: -2382}
-  m_LocalScale: {x: 0.76851827, y: 0.12684095, z: 7.4264417}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1576888575007793585 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3707677189597575664, guid: 183fa3d214207de4bb4ba91cbeec19ce,
