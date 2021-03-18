@@ -6418,7 +6418,7 @@ MonoBehaviour:
   m_riveSpawnPosZ: 50
   m_waterSpawnPosZ: 50
   m_riveLenghtX: 43.5
-  m_waterLenghtX: 39.5
+  m_waterLenghtX: 100
   m_maxInstances: 500
   m_distanceRespawnTrigger: 50
 --- !u!114 &981992593
@@ -7522,23 +7522,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7294891070604339077, guid: cd88c4441dfc6d74c9e1e1f3ef1b3249,
         type: 3}
-      propertyPath: playerDead
-      value: 
-      objectReference: {fileID: 32288724}
-    - target: {fileID: 7294891070604339077, guid: cd88c4441dfc6d74c9e1e1f3ef1b3249,
-        type: 3}
-      propertyPath: m_increaseSpeed
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7294891070604339077, guid: cd88c4441dfc6d74c9e1e1f3ef1b3249,
-        type: 3}
       propertyPath: m_maxSpeed
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7294891070604339077, guid: cd88c4441dfc6d74c9e1e1f3ef1b3249,
         type: 3}
+      propertyPath: playerDead
+      value: 
+      objectReference: {fileID: 32288724}
+    - target: {fileID: 7294891070604339077, guid: cd88c4441dfc6d74c9e1e1f3ef1b3249,
+        type: 3}
       propertyPath: m_countMaxAdd
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7294891070604339077, guid: cd88c4441dfc6d74c9e1e1f3ef1b3249,
+        type: 3}
+      propertyPath: m_increaseSpeed
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7294891070604339078, guid: cd88c4441dfc6d74c9e1e1f3ef1b3249,
         type: 3}
