@@ -18,10 +18,6 @@ public class CharaController : MonoBehaviour
     [SerializeField] private float m_increaseSpeed = 1.1f;
     [SerializeField] public float m_posZ;
     [SerializeField] public float m_maxSpeed;
-    
-    [SerializeField] private float m_xPos;//position axe X
-    [SerializeField] private float m_yPos;//position axe Y
-    [SerializeField] private float m_zPos;//position axe Z
 
     [SerializeField] private float m_elapsedTime;
     [SerializeField] private float m_delay;
