@@ -22,9 +22,6 @@ public class HealthBar : MonoBehaviour
             if (other.CompareTag("PlayerShoot"))
             {
                 m_slider.value -= m_damageAmmo;
-                Debug.Log(message:"AmmoHit");
-                Debug.Log(m_bossHP);
             }
-            
         }
 }

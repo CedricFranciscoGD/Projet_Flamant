@@ -68,9 +68,4 @@ public class LateralMovement : MonoBehaviour
         }
     }
     
-    //destroy on collide to avoid overlaps in game
-    private void OnTriggerEnter(Collider p_other)
-    {
-        Destroy(gameObject);
-    }
 }

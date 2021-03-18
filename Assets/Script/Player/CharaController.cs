@@ -45,7 +45,8 @@ public class CharaController : MonoBehaviour
             // récupère la valeur de l'axe
             float inputValue = Input.GetAxis("Horizontal");
 
-            // deplace le personnage
+            // deplace le personnage avec Q et D
+            transform.Translate(Vector3.left * m_speed * Time.deltaTime * inputValue);
             
             //SI le bouton gauche est cliqué, le joueur se dirige vers la gauche
             if (m_bLeftMove)
@@ -91,16 +92,11 @@ public class CharaController : MonoBehaviour
             {
                 SpeedIncrease();
             }
-            else
-            {
-                Debug.Log("MaxSpeedReached");
-            }
         }
     }
 
     void SpeedIncrease()
     {
-        Debug.Log("________________________speedincrease");
         m_speed = m_speed * m_increaseSpeed;
         m_countMax = m_countMax + m_countMaxAdd;
     }

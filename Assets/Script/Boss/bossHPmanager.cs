@@ -25,8 +25,6 @@ public class bossHPmanager : MonoBehaviour
                 //Instantiate(m_hitEffect, transform.position, transform.rotation);
                 PlayBossTouched();
                 m_bossHP -= m_damageAmmo;
-                Debug.Log(message:"AmmoHit");
-                Debug.Log(m_bossHP);
         }
         //win function trigger when boss die
         if (m_bossHP < 1)

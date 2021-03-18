@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1745030501168120986}
   - component: {fileID: 3060516054213505213}
   - component: {fileID: 3513301346454900499}
+  - component: {fileID: 6375498366647553153}
   m_Layer: 0
   m_Name: ammo
   m_TagString: PlayerShoot
@@ -62,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 670224309865224971, guid: 562c0a19b6226e549aa75faebe621399, type: 3}
+  - {fileID: 2100000, guid: d8dbe2bfed9e90f4fb00eb69373267bf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -138,3 +139,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ca023c28721d074ea0e067c8b95eb94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6375498366647553153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536247913841035033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f911bba43b84a644a9d50989adf5ef88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_elapsedTime: 0
