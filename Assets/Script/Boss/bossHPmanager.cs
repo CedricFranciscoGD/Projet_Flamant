@@ -1,4 +1,4 @@
-﻿
+﻿using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -14,12 +14,7 @@ public class bossHPmanager : MonoBehaviour
     public GameObject m_hitEffect;
     
     //* Update is called once per frame
-    
-    void Update()
-    {
-        
-    }
-    
+
     //Collide function with ammos
     //If boss get hit from player ammos 
     //Lose hp 
@@ -37,7 +32,7 @@ public class bossHPmanager : MonoBehaviour
         //win function trigger when boss die
         if (m_bossHP < 1)
         {
-                KillBoss();
+            KillBoss();
         }
     }
 
