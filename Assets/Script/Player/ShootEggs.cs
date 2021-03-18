@@ -1,9 +1,7 @@
-﻿
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class ShootEggs : MonoBehaviour
-{
+public class ShootEggs : MonoBehaviour {
     
     [SerializeField] private GameObject m_ammo;//gameobject prefab
     [SerializeField] private Vector3 m_popOffset = Vector3.up;//offset player shoot ammo setting
@@ -32,14 +30,13 @@ public class ShootEggs : MonoBehaviour
     {
         // AmmoDisplay reacts from player shooting
         m_ammoDisplay.text = m_ammoRemain.ToString();
-        if (m_ammoRemain > 0)
-        {
+
             if(Input.GetKeyDown(KeyCode.Space))
             {
                 
                 PlayShoot();
             }
-        }
+        
 
         else
         {
@@ -83,8 +80,11 @@ public class ShootEggs : MonoBehaviour
 
     public void PlayShoot()
     {
-        Shoot.Play();
-        Instantiate(m_ammo, transform.position + m_popOffset, m_ammo.transform.rotation);
-        m_ammoRemain -= 1;
+        if (m_ammoRemain > 0)
+        {
+            Shoot.Play();
+            Instantiate(m_ammo, transform.position + m_popOffset, m_ammo.transform.rotation);
+            m_ammoRemain -= 1;
+        }
     }
 }
