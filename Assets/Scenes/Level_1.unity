@@ -6280,7 +6280,6 @@ GameObject:
   - component: {fileID: 981992588}
   - component: {fileID: 981992589}
   - component: {fileID: 981992590}
-  - component: {fileID: 981992591}
   - component: {fileID: 981992592}
   - component: {fileID: 981992593}
   - component: {fileID: 981992594}
@@ -6372,27 +6371,6 @@ MonoBehaviour:
   m_spawnPosZ: -50
   m_spawnSpeedMax: 45
   m_spawnSpeedMin: 30
-  m_maxInstances: 500
-  m_distanceRespawnTrigger: 50
---- !u!114 &981992591
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 981992586}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98392b9fab4db2b4f87be9c30cbb68ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_enemy: {fileID: 5919611892407271275, guid: a68aa1c0f69d5e54ea8167efda40eec2, type: 3}
-  m_maxSpawnX: 11
-  m_minSpawnX: -3
-  m_spawnHeight: 4.5
-  m_spawnPosZ: 0
-  m_spawnSpeedMax: 45
-  m_spawnSpeedMin: 5
   m_maxInstances: 500
   m_distanceRespawnTrigger: 50
 --- !u!114 &981992592
