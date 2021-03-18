@@ -6438,7 +6438,7 @@ MonoBehaviour:
   m_tree3: {fileID: 5403496526604375437, guid: 33b3ad543def3a644a08abd414f08394, type: 3}
   m_maxSpawnX: 18
   m_minSpawnX: 29
-  m_spawnHeight: 4
+  m_spawnHeight: 2.7
   m_spawnPosZ: 40
   m_spawnSpeedMax: 3
   m_spawnSpeedMin: 1
@@ -7650,6 +7650,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2915144742363174949, guid: 183fa3d214207de4bb4ba91cbeec19ce,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f722643d37cb1cc42a71deaf15863e40, type: 2}
+    - target: {fileID: 2915144742363174949, guid: 183fa3d214207de4bb4ba91cbeec19ce,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: beaa8da4015e918479eafe1ff1a22b4a, type: 2}
+    - target: {fileID: 2915144742363174949, guid: 183fa3d214207de4bb4ba91cbeec19ce,
+        type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 72bcb4632c1e2de4bbedbec72aecc9b1, type: 2}
+    - target: {fileID: 2915144742363174949, guid: 183fa3d214207de4bb4ba91cbeec19ce,
+        type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: a23507a5d84ed3c4baef4dd0ce3a89d3, type: 2}
+    - target: {fileID: 2915144742363174949, guid: 183fa3d214207de4bb4ba91cbeec19ce,
+        type: 3}
+      propertyPath: m_Materials.Array.data[4]
+      value: 
+      objectReference: {fileID: 2100000, guid: 72bcb4632c1e2de4bbedbec72aecc9b1, type: 2}
+    - target: {fileID: 2915144742363174949, guid: 183fa3d214207de4bb4ba91cbeec19ce,
+        type: 3}
+      propertyPath: m_Materials.Array.data[5]
+      value: 
+      objectReference: {fileID: 2100000, guid: 72bcb4632c1e2de4bbedbec72aecc9b1, type: 2}
     - target: {fileID: 3707677189597575664, guid: 183fa3d214207de4bb4ba91cbeec19ce,
         type: 3}
       propertyPath: m_Name
