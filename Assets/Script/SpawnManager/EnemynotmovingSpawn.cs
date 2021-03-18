@@ -32,7 +32,7 @@ public class EnemynotmovingSpawn : MonoBehaviour
     {
         StartCoroutine(SpawningEnemies());
         m_player = GameObject.Find("PlayerFlamand");
-        Debug.Log(m_spawnPosZ);
+        //Debug.Log(m_spawnPosZ);
     }
 
     private void Update()

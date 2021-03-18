@@ -89,6 +89,7 @@ public class CharaController : MonoBehaviour
 
     void SpeedIncrease()
     {
+        Debug.Log("________________________speedincrease");
         m_speed = m_speed * m_increaseSpeed;
         m_countMax = m_countMax + m_countMaxAdd;
     }

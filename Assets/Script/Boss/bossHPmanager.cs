@@ -6,12 +6,11 @@ public class bossHPmanager : MonoBehaviour
 {
     
     //vars
-    [SerializeField] public float m_bossHP;
-    [SerializeField] public float m_damageAmmo;
+    [SerializeField] public float m_bossHP = 100;
+    [SerializeField] public float m_damageAmmo = 7;
 
     public AudioSource BossTouched;
-
-    public GameObject m_hitEffect;
+    //public GameObject m_hitEffect;
     
     //* Update is called once per frame
 
@@ -23,7 +22,7 @@ public class bossHPmanager : MonoBehaviour
     {
         if (p_other.CompareTag("PlayerShoot"))
         {
-                Instantiate(m_hitEffect, transform.position, transform.rotation);
+                //Instantiate(m_hitEffect, transform.position, transform.rotation);
                 PlayBossTouched();
                 m_bossHP -= m_damageAmmo;
                 Debug.Log(message:"AmmoHit");
