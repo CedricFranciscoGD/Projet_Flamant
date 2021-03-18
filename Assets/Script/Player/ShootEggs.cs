@@ -36,8 +36,7 @@ public class ShootEggs : MonoBehaviour
         {
             if(Input.GetKeyDown(KeyCode.Space))
             {
-                Instantiate(m_ammo, transform.position + m_popOffset, m_ammo.transform.rotation);
-                m_ammoRemain -= 1;
+                
                 PlayShoot();
             }
         }
@@ -85,5 +84,7 @@ public class ShootEggs : MonoBehaviour
     public void PlayShoot()
     {
         Shoot.Play();
+        Instantiate(m_ammo, transform.position + m_popOffset, m_ammo.transform.rotation);
+        m_ammoRemain -= 1;
     }
 }
