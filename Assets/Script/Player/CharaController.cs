@@ -7,10 +7,14 @@ using UnityEngine.SceneManagement;
 public class CharaController : MonoBehaviour
 {
     [SerializeField] public float m_speed; //character speed
+    [SerializeField] public float m_lateralSpeed; //character lateral speed
     [SerializeField] private float m_leftBand; //left border limit
     [SerializeField] private float m_rightBand; //right border limit
 
     public bool playerIsDead;
+
+    private bool m_bLeftMove = false;
+    private bool m_bRightMove = false;
 
     [SerializeField] private float m_countMax = 115;
     [SerializeField] private float m_countMaxAdd = 100;
@@ -42,7 +46,18 @@ public class CharaController : MonoBehaviour
             float inputValue = Input.GetAxis("Horizontal");
 
             // deplace le personnage
-            transform.Translate(Vector3.left * m_speed * Time.deltaTime * inputValue);
+            
+            //SI le bouton gauche est cliqué, le joueur se dirige vers la gauche
+            if (m_bLeftMove)
+            {
+                transform.Translate(Vector3.left * -m_speed * Time.deltaTime);
+            }
+            //SI le bouton droit est cliqué, le joueur se dirige vers la droite
+            if (m_bRightMove)
+            {
+                transform.Translate(Vector3.left * m_speed * Time.deltaTime);
+            }
+            
             //Déplace le personnage automatiquement
             transform.Translate(Vector3.back * m_speed * Time.deltaTime);
         }
@@ -88,6 +103,27 @@ public class CharaController : MonoBehaviour
         Debug.Log("________________________speedincrease");
         m_speed = m_speed * m_increaseSpeed;
         m_countMax = m_countMax + m_countMaxAdd;
+    }
+
+    //Au clic du bouton left la variable passe a true
+    public void LeftMove()
+    {
+        m_bLeftMove = true;
+    }
+    //Au laché du clic du bouton left la variable passe a false
+    public void StopLeftMove()
+    {
+        m_bLeftMove = false;
+    }
+    //Au clic du bouton right la variable passe a true
+    public void RightMove()
+    {
+        m_bRightMove = true;
+    }
+    //Au laché du clic du bouton right la variable passe a false
+    public void StopRightMove()
+    {
+        m_bRightMove = false;
     }
 
     /// <summary>
