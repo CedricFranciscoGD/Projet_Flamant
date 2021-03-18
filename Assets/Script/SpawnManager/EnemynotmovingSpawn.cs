@@ -14,7 +14,7 @@ public class EnemynotmovingSpawn : MonoBehaviour
     [SerializeField] private float m_minSpawnX = 1; //Minimum axe X
     [SerializeField] private float m_spawnHeight = 10; //Hauteur axe Y
     [SerializeField] private float m_spawnPosZ; //Position axe Z
-    
+
     //Random range for spawn speed
     [SerializeField] private float m_spawnSpeedMax = 30;//max border spawn range speed
     [SerializeField] private float m_spawnSpeedMin = 5;//min border spawn range speed
